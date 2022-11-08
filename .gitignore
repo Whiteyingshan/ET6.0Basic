@@ -32,8 +32,11 @@ CODE/Temp
 CODE/Logs
 CODE/Unity/CSharp60Support/compilation.log
 CODE/.vs
+CODE/.idea
 CODE/Server/.vs/
+CODE/Server/.idea/
 CODE/Unity/.vs/
+CODE/Unity/.idea/
 CODE/Tools/MongoDB
 CODE/Excel/md5.txt
 CODE/Release
@@ -45,7 +48,6 @@ CODE/Unity/Assets/StreamingAssets.meta
 CODE/.DS_Store
 CODE/Server/.DS_Store
 CODE/Server/.vscode/
-CODE/.vs/
 CODE/.objs/
 CODE/Unity/.gradle
 CODE/*.user
