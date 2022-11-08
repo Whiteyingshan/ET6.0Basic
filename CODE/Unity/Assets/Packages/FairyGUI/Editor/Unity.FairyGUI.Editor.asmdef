@@ -1,0 +1,18 @@
+{
+    "name": "Unity.FairyGUI.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:94ca898f234cbe045853425cd5299291"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

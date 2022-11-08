@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="5ardt36y">
+  <resources>
+    <component id="ang3d4" name="NoticeTipsLabel.xml" path="/通知/" exported="true"/>
+    <component id="ang3d5" name="NoticeWindow.xml" path="/通知/" exported="true"/>
+    <component id="ang3d6" name="NoticeBtn.xml" path="/通知/组件/"/>
+    <component id="ang3d7" name="NoticeIconLabel.xml" path="/通知/组件/"/>
+    <image id="ang3df" name="iconblankBG.png" path="/通知/资源/"/>
+    <image id="ang3dg" name="IMG_HeroNameTitleBG.png" path="/通知/资源/" scale="9grid" scale9grid="339,73,113,25"/>
+  </resources>
+  <publish name=""/>
+</packageDescription>

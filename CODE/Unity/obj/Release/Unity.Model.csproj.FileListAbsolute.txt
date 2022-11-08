@@ -1,0 +1,2 @@
+D:\JZJML\CODE\Unity\obj\Release\Unity.Model.csproj.AssemblyReference.cache
+D:\JZJML\CODE\Unity\obj\Release\Unity.Model.csproj.CoreCompileInputs.cache

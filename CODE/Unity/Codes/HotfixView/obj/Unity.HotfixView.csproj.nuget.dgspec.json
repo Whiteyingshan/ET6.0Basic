@@ -1,0 +1,359 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Test\\ET6.0Basic\\CODE\\Unity\\Codes\\HotfixView\\Unity.HotfixView.csproj": {}
+  },
+  "projects": {
+    "D:\\Test\\ET6.0Basic\\CODE\\Unity\\Codes\\HotfixView\\Unity.HotfixView.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Test\\ET6.0Basic\\CODE\\Unity\\Codes\\HotfixView\\Unity.HotfixView.csproj",
+        "projectName": "Unity.HotfixView",
+        "projectPath": "D:\\Test\\ET6.0Basic\\CODE\\Unity\\Codes\\HotfixView\\Unity.HotfixView.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\Test\\ET6.0Basic\\CODE\\Unity\\Codes\\HotfixView\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net471"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net471": {
+            "targetAlias": "net471",
+            "projectReferences": {
+              "D:\\Test\\ET6.0Basic\\CODE\\Unity\\Codes\\Hotfix\\Unity.Hotfix.csproj": {
+                "projectPath": "D:\\Test\\ET6.0Basic\\CODE\\Unity\\Codes\\Hotfix\\Unity.Hotfix.csproj"
+              },
+              "D:\\Test\\ET6.0Basic\\CODE\\Unity\\Codes\\ModelView\\Unity.ModelView.csproj": {
+                "projectPath": "D:\\Test\\ET6.0Basic\\CODE\\Unity\\Codes\\ModelView\\Unity.ModelView.csproj"
+              },
+              "D:\\Test\\ET6.0Basic\\CODE\\Unity\\Codes\\Model\\Unity.Model.csproj": {
+                "projectPath": "D:\\Test\\ET6.0Basic\\CODE\\Unity\\Codes\\Model\\Unity.Model.csproj"
+              },
+              "D:\\Test\\ET6.0Basic\\CODE\\Unity\\spine-unity.csproj": {
+                "projectPath": "D:\\Test\\ET6.0Basic\\CODE\\Unity\\spine-unity.csproj"
+              },
+              "D:\\Test\\ET6.0Basic\\CODE\\Unity\\Unity.FairyGUI.Runtime.csproj": {
+                "projectPath": "D:\\Test\\ET6.0Basic\\CODE\\Unity\\Unity.FairyGUI.Runtime.csproj"
+              },
+              "D:\\Test\\ET6.0Basic\\CODE\\Unity\\Unity.Mono.csproj": {
+                "projectPath": "D:\\Test\\ET6.0Basic\\CODE\\Unity\\Unity.Mono.csproj"
+              },
+              "D:\\Test\\ET6.0Basic\\CODE\\Unity\\Unity.ThirdParty.csproj": {
+                "projectPath": "D:\\Test\\ET6.0Basic\\CODE\\Unity\\Unity.ThirdParty.csproj"
+              },
+              "D:\\Test\\ET6.0Basic\\CODE\\Unity\\VEngine.csproj": {
+                "projectPath": "D:\\Test\\ET6.0Basic\\CODE\\Unity\\VEngine.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net471": {
+          "targetAlias": "net471",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Test\\ET6.0Basic\\CODE\\Unity\\Codes\\Hotfix\\Unity.Hotfix.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Test\\ET6.0Basic\\CODE\\Unity\\Codes\\Hotfix\\Unity.Hotfix.csproj",
+        "projectName": "Unity.Hotfix",
+        "projectPath": "D:\\Test\\ET6.0Basic\\CODE\\Unity\\Codes\\Hotfix\\Unity.Hotfix.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\Test\\ET6.0Basic\\CODE\\Unity\\Codes\\Hotfix\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net471"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net471": {
+            "targetAlias": "net471",
+            "projectReferences": {
+              "D:\\Test\\ET6.0Basic\\CODE\\Unity\\Codes\\Model\\Unity.Model.csproj": {
+                "projectPath": "D:\\Test\\ET6.0Basic\\CODE\\Unity\\Codes\\Model\\Unity.Model.csproj"
+              },
+              "D:\\Test\\ET6.0Basic\\CODE\\Unity\\Unity.Mono.csproj": {
+                "projectPath": "D:\\Test\\ET6.0Basic\\CODE\\Unity\\Unity.Mono.csproj"
+              },
+              "D:\\Test\\ET6.0Basic\\CODE\\Unity\\Unity.ThirdParty.csproj": {
+                "projectPath": "D:\\Test\\ET6.0Basic\\CODE\\Unity\\Unity.ThirdParty.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net471": {
+          "targetAlias": "net471",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Test\\ET6.0Basic\\CODE\\Unity\\Codes\\ModelView\\Unity.ModelView.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Test\\ET6.0Basic\\CODE\\Unity\\Codes\\ModelView\\Unity.ModelView.csproj",
+        "projectName": "Unity.ModelView",
+        "projectPath": "D:\\Test\\ET6.0Basic\\CODE\\Unity\\Codes\\ModelView\\Unity.ModelView.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\Test\\ET6.0Basic\\CODE\\Unity\\Codes\\ModelView\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net471"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net471": {
+            "targetAlias": "net471",
+            "projectReferences": {
+              "D:\\Test\\ET6.0Basic\\CODE\\Unity\\Codes\\Model\\Unity.Model.csproj": {
+                "projectPath": "D:\\Test\\ET6.0Basic\\CODE\\Unity\\Codes\\Model\\Unity.Model.csproj"
+              },
+              "D:\\Test\\ET6.0Basic\\CODE\\Unity\\spine-unity.csproj": {
+                "projectPath": "D:\\Test\\ET6.0Basic\\CODE\\Unity\\spine-unity.csproj"
+              },
+              "D:\\Test\\ET6.0Basic\\CODE\\Unity\\Unity.FairyGUI.Runtime.csproj": {
+                "projectPath": "D:\\Test\\ET6.0Basic\\CODE\\Unity\\Unity.FairyGUI.Runtime.csproj"
+              },
+              "D:\\Test\\ET6.0Basic\\CODE\\Unity\\Unity.Mono.csproj": {
+                "projectPath": "D:\\Test\\ET6.0Basic\\CODE\\Unity\\Unity.Mono.csproj"
+              },
+              "D:\\Test\\ET6.0Basic\\CODE\\Unity\\Unity.ThirdParty.csproj": {
+                "projectPath": "D:\\Test\\ET6.0Basic\\CODE\\Unity\\Unity.ThirdParty.csproj"
+              },
+              "D:\\Test\\ET6.0Basic\\CODE\\Unity\\VEngine.csproj": {
+                "projectPath": "D:\\Test\\ET6.0Basic\\CODE\\Unity\\VEngine.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net471": {
+          "targetAlias": "net471",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Test\\ET6.0Basic\\CODE\\Unity\\Codes\\Model\\Unity.Model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Test\\ET6.0Basic\\CODE\\Unity\\Codes\\Model\\Unity.Model.csproj",
+        "projectName": "Unity.Model",
+        "projectPath": "D:\\Test\\ET6.0Basic\\CODE\\Unity\\Codes\\Model\\Unity.Model.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\Test\\ET6.0Basic\\CODE\\Unity\\Codes\\Model\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net471"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net471": {
+            "targetAlias": "net471",
+            "projectReferences": {
+              "D:\\Test\\ET6.0Basic\\CODE\\Unity\\Unity.Mono.csproj": {
+                "projectPath": "D:\\Test\\ET6.0Basic\\CODE\\Unity\\Unity.Mono.csproj"
+              },
+              "D:\\Test\\ET6.0Basic\\CODE\\Unity\\Unity.ThirdParty.csproj": {
+                "projectPath": "D:\\Test\\ET6.0Basic\\CODE\\Unity\\Unity.ThirdParty.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net471": {
+          "targetAlias": "net471",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Test\\ET6.0Basic\\CODE\\Unity\\spine-unity-editor.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\Test\\ET6.0Basic\\CODE\\Unity\\spine-unity-editor.csproj",
+        "projectName": "spine-unity-editor",
+        "projectPath": "D:\\Test\\ET6.0Basic\\CODE\\Unity\\spine-unity-editor.csproj",
+        "frameworks": {
+          "net471": {
+            "projectReferences": {
+              "D:\\Test\\ET6.0Basic\\CODE\\Unity\\spine-unity.csproj": {
+                "projectPath": "D:\\Test\\ET6.0Basic\\CODE\\Unity\\spine-unity.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net471": {}
+      }
+    },
+    "D:\\Test\\ET6.0Basic\\CODE\\Unity\\spine-unity.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\Test\\ET6.0Basic\\CODE\\Unity\\spine-unity.csproj",
+        "projectName": "spine-unity",
+        "projectPath": "D:\\Test\\ET6.0Basic\\CODE\\Unity\\spine-unity.csproj",
+        "frameworks": {
+          "net471": {
+            "projectReferences": {
+              "D:\\Test\\ET6.0Basic\\CODE\\Unity\\Unity.ThirdParty.csproj": {
+                "projectPath": "D:\\Test\\ET6.0Basic\\CODE\\Unity\\Unity.ThirdParty.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net471": {}
+      }
+    },
+    "D:\\Test\\ET6.0Basic\\CODE\\Unity\\Unity.FairyGUI.Runtime.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\Test\\ET6.0Basic\\CODE\\Unity\\Unity.FairyGUI.Runtime.csproj",
+        "projectName": "Unity.FairyGUI.Runtime",
+        "projectPath": "D:\\Test\\ET6.0Basic\\CODE\\Unity\\Unity.FairyGUI.Runtime.csproj",
+        "frameworks": {
+          "net471": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net471": {}
+      }
+    },
+    "D:\\Test\\ET6.0Basic\\CODE\\Unity\\Unity.Mono.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\Test\\ET6.0Basic\\CODE\\Unity\\Unity.Mono.csproj",
+        "projectName": "Unity.Mono",
+        "projectPath": "D:\\Test\\ET6.0Basic\\CODE\\Unity\\Unity.Mono.csproj",
+        "frameworks": {
+          "net471": {
+            "projectReferences": {
+              "D:\\Test\\ET6.0Basic\\CODE\\Unity\\spine-unity-editor.csproj": {
+                "projectPath": "D:\\Test\\ET6.0Basic\\CODE\\Unity\\spine-unity-editor.csproj"
+              },
+              "D:\\Test\\ET6.0Basic\\CODE\\Unity\\spine-unity.csproj": {
+                "projectPath": "D:\\Test\\ET6.0Basic\\CODE\\Unity\\spine-unity.csproj"
+              },
+              "D:\\Test\\ET6.0Basic\\CODE\\Unity\\Unity.FairyGUI.Runtime.csproj": {
+                "projectPath": "D:\\Test\\ET6.0Basic\\CODE\\Unity\\Unity.FairyGUI.Runtime.csproj"
+              },
+              "D:\\Test\\ET6.0Basic\\CODE\\Unity\\Unity.ThirdParty.csproj": {
+                "projectPath": "D:\\Test\\ET6.0Basic\\CODE\\Unity\\Unity.ThirdParty.csproj"
+              },
+              "D:\\Test\\ET6.0Basic\\CODE\\Unity\\VEngine.csproj": {
+                "projectPath": "D:\\Test\\ET6.0Basic\\CODE\\Unity\\VEngine.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net471": {}
+      }
+    },
+    "D:\\Test\\ET6.0Basic\\CODE\\Unity\\Unity.ThirdParty.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\Test\\ET6.0Basic\\CODE\\Unity\\Unity.ThirdParty.csproj",
+        "projectName": "Unity.ThirdParty",
+        "projectPath": "D:\\Test\\ET6.0Basic\\CODE\\Unity\\Unity.ThirdParty.csproj",
+        "frameworks": {
+          "net471": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net471": {}
+      }
+    },
+    "D:\\Test\\ET6.0Basic\\CODE\\Unity\\VEngine.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\Test\\ET6.0Basic\\CODE\\Unity\\VEngine.csproj",
+        "projectName": "VEngine",
+        "projectPath": "D:\\Test\\ET6.0Basic\\CODE\\Unity\\VEngine.csproj",
+        "frameworks": {
+          "net471": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net471": {}
+      }
+    }
+  }
+}

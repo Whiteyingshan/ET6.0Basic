@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 953070865
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 5e9a70754954a1d815af9b4ddc11112a
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: dc341dc0f7c6c0a9638ce6530d135453
+HashAppended: 1
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 49
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- "Assets/Bundles/FUI/\u767B\u9646\u6CE8\u518C/\u767B\u9646\u6CE8\u518C_atlas0.png"
+- "Assets/Bundles/FUI/\u767B\u9646\u6CE8\u518C/\u767B\u9646\u6CE8\u518C_atlas_fs6k2t.png"
+- "Assets/Bundles/FUI/\u767B\u9646\u6CE8\u518C/\u767B\u9646\u6CE8\u518C_atlas_hg9l3a.png"
+- "Assets/Bundles/FUI/\u767B\u9646\u6CE8\u518C/\u767B\u9646\u6CE8\u518C_fui.bytes"
+Dependencies: []

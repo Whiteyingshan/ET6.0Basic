@@ -1,0 +1,17 @@
+ManifestFileVersion: 0
+CRC: 486269000
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 08ff2c7724b7a597c3554844c5678b6b
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 5ad585dd02dfb5016c0dad519eab8f49
+HashAppended: 1
+ClassTypes:
+- Class: 49
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Bundles/FUI/_Component_Main/_Component_Main_fui.bytes
+Dependencies: []

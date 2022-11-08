@@ -1,0 +1,2 @@
+D:\JZJML\CODE\Unity\obj\Release\Unity.Hotfix.csproj.AssemblyReference.cache
+D:\JZJML\CODE\Unity\obj\Release\Unity.Hotfix.csproj.CoreCompileInputs.cache

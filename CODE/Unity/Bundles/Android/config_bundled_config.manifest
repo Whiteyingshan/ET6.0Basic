@@ -1,0 +1,24 @@
+ManifestFileVersion: 0
+CRC: 2508577761
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: f7b65ddda7028ff794ffab6f14c0ce9c
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 5ad585dd02dfb5016c0dad519eab8f49
+HashAppended: 1
+ClassTypes:
+- Class: 49
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Bundles/Config/StartMachineConfigCategory.bytes
+- Assets/Bundles/Config/StartSceneConfigCategory.bytes
+- Assets/Bundles/Config/NoticeConfigCategory.bytes
+- Assets/Bundles/Config/NumericTypeConfigCategory.bytes
+- Assets/Bundles/Config/StartProcessConfigCategory.bytes
+- Assets/Bundles/Config/cSpineAssetConfigCategory.bytes
+- Assets/Bundles/Config/AudioConfigCategory.bytes
+- Assets/Bundles/Config/StartZoneConfigCategory.bytes
+Dependencies: []

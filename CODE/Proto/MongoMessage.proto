@@ -1,0 +1,12 @@
+syntax = "proto3";
+package ET;
+
+//========================================IActorRequest========================================
+message ObjectQueryResponse // IActorResponse
+{
+    int32 RpcId = 1;
+    int32 Error = 2;
+    string Message = 3;
+
+    Entity entity = 4;
+}

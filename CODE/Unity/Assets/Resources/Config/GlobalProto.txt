@@ -1,0 +1,1 @@
+{"_t":"GloboProto","Inst":null,"ServerAddress":"127.0.0.1:10001","AssetsAddress":""}

@@ -1,0 +1,56 @@
+ManifestFileVersion: 0
+CRC: 3186664720
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: eb63923d8b87f1615aa442ddaf595669
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: caa411b8fd18ed13e084b212b306ea2a
+HashAppended: 1
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 49
+  Script: {instanceID: 0}
+- Class: 83
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- "Assets/Bundles/FUI/\u8D44\u6E901000Versions/\u8D44\u6E901000Versions_atlas0_3.png"
+- "Assets/Bundles/FUI/\u8D44\u6E901000Versions/\u8D44\u6E901000Versions_atlas_woa7330.png"
+- "Assets/Bundles/FUI/\u8D44\u6E901000Versions/\u8D44\u6E901000Versions_r9ni2jf.ogg"
+- "Assets/Bundles/FUI/\u8D44\u6E901000Versions/\u8D44\u6E901000Versions_atlas0_2.png"
+- "Assets/Bundles/FUI/\u8D44\u6E901000Versions/\u8D44\u6E901000Versions_atlas_ktogz3a3.png"
+- "Assets/Bundles/FUI/\u8D44\u6E901000Versions/\u8D44\u6E901000Versions_atlas0.png"
+- "Assets/Bundles/FUI/\u8D44\u6E901000Versions/\u8D44\u6E901000Versions_atlas_ktogz3a4.png"
+- "Assets/Bundles/FUI/\u8D44\u6E901000Versions/\u8D44\u6E901000Versions_fui.bytes"
+- "Assets/Bundles/FUI/\u8D44\u6E901000Versions/\u8D44\u6E901000Versions_atlas_9xkqz35q.png"
+- "Assets/Bundles/FUI/\u8D44\u6E901000Versions/\u8D44\u6E901000Versions_atlas_ktogz3a6.png"
+- "Assets/Bundles/FUI/\u8D44\u6E901000Versions/\u8D44\u6E901000Versions_atlas_gzb5z35t.png"
+- "Assets/Bundles/FUI/\u8D44\u6E901000Versions/\u8D44\u6E901000Versions_atlas_ktog1i5.png"
+- "Assets/Bundles/FUI/\u8D44\u6E901000Versions/\u8D44\u6E901000Versions_atlas_txt0332.png"
+- "Assets/Bundles/FUI/\u8D44\u6E901000Versions/\u8D44\u6E901000Versions_atlas_uv1432u.png"
+- "Assets/Bundles/FUI/\u8D44\u6E901000Versions/\u8D44\u6E901000Versions_atlas_wu1a33f.png"
+- "Assets/Bundles/FUI/\u8D44\u6E901000Versions/\u8D44\u6E901000Versions_atlas_i6u4336.png"
+- "Assets/Bundles/FUI/\u8D44\u6E901000Versions/\u8D44\u6E901000Versions_atlas_rru132z.png"
+- "Assets/Bundles/FUI/\u8D44\u6E901000Versions/\u8D44\u6E901000Versions_atlas0_1.png"
+- "Assets/Bundles/FUI/\u8D44\u6E901000Versions/\u8D44\u6E901000Versions_atlas_ktogz3a1.png"
+- "Assets/Bundles/FUI/\u8D44\u6E901000Versions/\u8D44\u6E901000Versions_atlas_wu1a33i.png"
+- "Assets/Bundles/FUI/\u8D44\u6E901000Versions/\u8D44\u6E901000Versions_atlas_ktogz3a5.png"
+- "Assets/Bundles/FUI/\u8D44\u6E901000Versions/\u8D44\u6E901000Versions_atlas_ib6e335.png"
+- "Assets/Bundles/FUI/\u8D44\u6E901000Versions/\u8D44\u6E901000Versions_atlas_rru132x.png"
+- "Assets/Bundles/FUI/\u8D44\u6E901000Versions/\u8D44\u6E901000Versions_atlas_txt0334.png"
+- "Assets/Bundles/FUI/\u8D44\u6E901000Versions/\u8D44\u6E901000Versions_atlas_ktogz3a0.png"
+- "Assets/Bundles/FUI/\u8D44\u6E901000Versions/\u8D44\u6E901000Versions_atlas_txt0333.png"
+- "Assets/Bundles/FUI/\u8D44\u6E901000Versions/\u8D44\u6E901000Versions_r3dy25q.mp3"
+- "Assets/Bundles/FUI/\u8D44\u6E901000Versions/\u8D44\u6E901000Versions_atlas_uv1432t.png"
+- "Assets/Bundles/FUI/\u8D44\u6E901000Versions/\u8D44\u6E901000Versions_atlas_mi36z386.png"
+- "Assets/Bundles/FUI/\u8D44\u6E901000Versions/\u8D44\u6E901000Versions_atlas_ktog1i6.png"
+- "Assets/Bundles/FUI/\u8D44\u6E901000Versions/\u8D44\u6E901000Versions_atlas8.png"
+- "Assets/Bundles/FUI/\u8D44\u6E901000Versions/\u8D44\u6E901000Versions_atlas_gzb5z35s.png"
+- "Assets/Bundles/FUI/\u8D44\u6E901000Versions/\u8D44\u6E901000Versions_atlas_ktogz3a7.png"
+- "Assets/Bundles/FUI/\u8D44\u6E901000Versions/\u8D44\u6E901000Versions_atlas_gzb5z35u.png"
+- "Assets/Bundles/FUI/\u8D44\u6E901000Versions/\u8D44\u6E901000Versions_d3l82ip.ogg"
+- "Assets/Bundles/FUI/\u8D44\u6E901000Versions/\u8D44\u6E901000Versions_atlas_ktogz3a2.png"
+Dependencies: []

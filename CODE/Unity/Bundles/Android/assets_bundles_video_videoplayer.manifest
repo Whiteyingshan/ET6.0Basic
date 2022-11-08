@@ -1,0 +1,24 @@
+ManifestFileVersion: 0
+CRC: 3661914447
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: df27b8b246f2aeccf3369c08d6b3c1d0
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 603879fcba25db8fc503c900e367da31
+HashAppended: 1
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 84
+  Script: {instanceID: 0}
+- Class: 328
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Bundles/Video/VideoPlayer.prefab
+Dependencies:
+- D:/Test/ET6.0Basic/CODE/Unity/Bundles/Android/assets_bundles_video_videoplayerrendertexture_d34ac531e372b2cbf1c9f8cf8b1f85c0

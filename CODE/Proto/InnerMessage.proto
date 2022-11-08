@@ -1,0 +1,404 @@
+syntax = "proto3";
+package ET;
+
+//========================================IActorMessage========================================
+message G2Mail_Logout // IActorMessage
+{
+    int64 PlayerId = 1;
+}
+
+message G2Mail_ReadMail // IActorMessage
+{
+    int64 PlayerId = 1;
+    int64 MailId = 2;
+}
+
+message G2Mail_DeleteMail // IActorMessage
+{
+    int64 PlayerId = 1;
+    int64 MailId = 2;
+}
+
+message P2Mail_SendMailToPlayer // IActorMessage
+{
+    int32 RpcId = 1;
+    int64 PlayerId = 2;
+    MailObjectInfo MailObjectInfo = 3;
+}
+
+message P2Mail_SendMailToOnline // IActorMessage
+{
+    MailObjectInfo MailObjectInfo = 1;
+}
+
+message P2Mail_DeletePlayerMail // IActorMessage
+{
+    int32 RpcId = 1;
+    int64 PlayerId = 2;
+    int32 MailId = 3;
+}
+//========================================IActorRequest========================================
+//ResponseType ObjectAddResponse
+message ObjectAddRequest // IActorRequest
+{
+    int32 RpcId = 1;
+    int64 ActorId = 2;
+    int64 Key = 3;
+    int64 InstanceId = 4;
+}
+
+message ObjectAddResponse // IActorResponse
+{
+    int32 RpcId = 1;
+    int32 Error = 2;
+    string Message = 3;
+}
+
+//ResponseType ObjectRemoveResponse
+message ObjectRemoveRequest // IActorRequest
+{
+    int32 RpcId = 1;
+    int64 ActorId = 2;
+    int64 Key = 3;
+}
+message ObjectRemoveResponse // IActorResponse
+{
+    int32 RpcId = 1;
+    int32 Error = 2;
+    string Message = 3;
+}
+
+//ResponseType ObjectLockResponse
+message ObjectLockRequest // IActorRequest
+{
+    int32 RpcId = 1;
+    int64 ActorId = 2;
+    int64 Key = 3;
+    int64 InstanceId = 4;
+    int32 Time = 5;
+}
+
+message ObjectLockResponse // IActorResponse
+{
+    int32 RpcId = 1;
+    int32 Error = 2;
+    string Message = 3;
+}
+
+//ResponseType ObjectUnLockResponse
+message ObjectUnLockRequest // IActorRequest
+{
+    int32 RpcId = 1;
+    int64 ActorId = 2;
+    int64 Key = 3;
+    int64 OldInstanceId = 4;
+    int64 InstanceId = 5;
+}
+
+message ObjectUnLockResponse // IActorResponse
+{
+    int32 RpcId = 1;
+    int32 Error = 2;
+    string Message = 3;
+}
+
+//ResponseType ObjectGetResponse
+message ObjectGetRequest // IActorRequest
+{
+    int32 RpcId = 1;
+    int64 ActorId = 2;
+    int64 Key = 3;
+}
+
+message ObjectGetResponse // IActorResponse
+{
+    int32 RpcId = 1;
+    int32 Error = 2;
+    string Message = 3;
+
+    int64 InstanceId = 4;
+}
+
+//ResponseType ObjectQueryResponse
+message ObjectQueryRequest // IActorRequest
+{
+    int32 RpcId = 1;
+    int64 ActorId = 2;
+    int64 Key = 3;
+    int64 InstanceId = 4;
+}
+
+//ResponseType G2G_LockResponse
+message G2G_LockRequest // IActorRequest
+{
+    int32 RpcId = 1;
+    int64 ActorId = 2;
+    int64 Id = 3;
+    string Address = 4;
+}
+
+message G2G_LockResponse // IActorResponse
+{
+    int32 RpcId = 1;
+    int32 Error = 2;
+    string Message = 3;
+}
+
+//ResponseType G2G_LockReleaseResponse
+message G2G_LockReleaseRequest // IActorRequest
+{
+    int32 RpcId = 1;
+    int64 ActorId = 2;
+    int64 Id = 3;
+    string Address = 4;
+}
+
+message G2G_LockReleaseResponse // IActorResponse
+{
+    int32 RpcId = 1;
+    int32 Error = 2;
+    string Message = 3;
+}
+
+//ResponseType A2M_Reload
+message M2A_Reload // IActorRequest
+{
+    int32 RpcId = 1;
+    int64 ActorId = 2;
+}
+
+message A2M_Reload // IActorResponse
+{
+    int32 RpcId = 1;
+    int32 Error = 2;
+    string Message = 3;
+}
+
+//ResponseType R2G_CheckLoginKey
+message G2R_CheckLoginKey // IActorRequest
+{
+    int32 RpcId = 1;
+    string Token = 2;
+}
+
+message R2G_CheckLoginKey // IActorResponse
+{
+    int32 RpcId = 1;
+    int32 Error = 2;
+    string Message = 3;
+    string UUID = 4;
+}
+
+//ResponseType G2R_GetLoginKey
+message R2G_GetLoginKey // IActorRequest
+{
+    int32 RpcId = 1;
+    int64 ActorId = 2;
+    string Account = 3;
+}
+
+message G2R_GetLoginKey // IActorResponse
+{
+    int32 RpcId = 1;
+    int32 Error = 2;
+    string Message = 3;
+
+    int64 Key = 4;
+    int64 GateId = 5;
+}
+
+//ResponseType M2G_CreateUnit
+message G2M_CreateUnit // IActorRequest
+{
+    int32 RpcId = 1;
+    int64 ActorId = 2;
+    int64 PlayerId = 3;
+    int64 GateSessionId = 4;
+}
+
+message M2G_CreateUnit // IActorResponse
+{
+    int32 RpcId = 1;
+    int32 Error = 2;
+    string Message = 3;
+
+    // 自己的unit id
+    int64 UnitId = 4;
+    // 所有的unit
+    repeated UnitInfo Units = 5;
+}
+
+//ResponseType Mail2G_Login
+message G2Mail_Login // IActorRequest
+{
+    int32 RpcId = 1;
+    int64 PlayerId = 2;
+    int64 InstanceId = 3;
+}
+
+message Mail2G_Login // IActorResponse
+{
+    int32 RpcId = 1;
+    int32 Error = 2;
+    string Message = 3;
+    PlayerMailInfo PlayerMailInfo = 4;
+}
+
+//ResponseType G2Mail_SendMailToPlayer
+message Mail2G_SendMailToPlayer // IActorRequest
+{
+    int32 RpcId = 1;
+    MailObjectInfo MailObjectInfo = 2;
+}
+
+message G2Mail_SendMailToPlayer // IActorResponse
+{
+    int32 RpcId = 1;
+    int32 Error = 2;
+    string Message = 3;
+}
+
+//ResponseType Mail2G_AutoDeleteMail
+message G2Mail_AutoDeleteMail // IActorRequest
+{
+    int32 RpcId = 1;
+    int64 PlayerId = 2;
+}
+
+message Mail2G_AutoDeleteMail // IActorResponse
+{
+    int32 RpcId = 1;
+    int32 Error = 2;
+    string Message = 3;
+    PlayerMailInfo PlayerMailInfo = 4;
+}
+
+//ResponseType Mail2G_GetMailEnclosure
+message G2Mail_GetMailEnclosure // IActorRequest
+{
+    int32 RpcId = 1;
+    int64 PlayerId = 2;
+    int64 MailId = 3;
+}
+
+message Mail2G_GetMailEnclosure // IActorResponse
+{
+    int32 RpcId = 1;
+    int32 Error = 2;
+    string Message = 3;
+    repeated int32 ItemId = 4;
+    repeated int32 ItemCount = 5;
+}
+
+//ResponseType Mail2G_AutoGetMailEnclosure
+message G2Mail_AutoGetMailEnclosure // IActorRequest
+{
+    int32 RpcId = 1;
+    int64 PlayerId = 2;
+}
+
+message Mail2G_AutoGetMailEnclosure // IActorResponse
+{
+    int32 RpcId = 1;
+    int32 Error = 2;
+    string Message = 3;
+    repeated int32 ItemId = 4;
+    repeated int32 ItemCount = 5;
+    PlayerMailInfo PlayerMailInfo = 6;
+}
+
+message G2Rank_SetPlayerName // IActorMessage
+{
+    int32 RpcId = 1;
+    int64 PlayerId = 2;
+    string PlayerName = 3;
+}
+
+//ResponseType Rank2G_SetPlayerRankScore
+message G2Rank_SetPlayerRankScore // IActorRequest
+{
+    int32 RpcId = 1;
+    int64 PlayerId = 2;
+    int32 PlayerScore = 3;
+}
+
+message Rank2G_SetPlayerRankScore // IActorResponse
+{
+    int32 RpcId = 1;
+    int32 Error = 2;
+    string Message = 3;
+    int32 PlayerScore = 4;
+}
+
+//ResponseType Rank2G_GetPlayerRank
+message G2Rank_GetPlayerRank // IActorRequest
+{
+    int32 RpcId = 1;
+    int64 PlayerId = 2;
+}
+
+message Rank2G_GetPlayerRank // IActorResponse
+{
+    int32 RpcId = 1;
+    int32 Error = 2;
+    string Message = 3;
+    int32 Rank = 4;
+    PlayerRankInfo playerRankInfo = 5;
+}
+
+//ResponseType Rank2G_GetPlayerRankList
+message G2Rank_GetPlayerRankList // IActorRequest
+{
+    int32 RpcId = 1;
+    int64 PlayerId = 2;
+}
+
+message Rank2G_GetPlayerRankList // IActorResponse
+{
+    int32 RpcId = 1;
+    int32 Error = 2;
+    string Message = 3;
+    int32 Rank = 4;
+    PlayerRankInfo playerRankInfo = 5;
+    PlayerRankListInfo playerRankListInfo = 6;
+}
+
+//ResponseType Rank2G_GetPlayerSeasonRankList
+message G2Rank_GetPlayerSeasonRankList // IActorRequest
+{
+    int32 RpcId = 1;
+    int64 PlayerId = 2;
+}
+
+message Rank2G_GetPlayerSeasonRankList // IActorResponse
+{
+    int32 RpcId = 1;
+    int32 Error = 2;
+    string Message = 3;
+    PlayerRankListInfo Seasons = 4;
+}
+
+
+//ResponseType Rank2G_MatchRankPlayer
+message G2Rank_MatchRankPlayer // IActorRequest
+{
+    int32 RpcId = 1;
+    int64 PlayerId = 2;
+}
+
+message Rank2G_MatchRankPlayer // IActorResponse
+{
+    int32 RpcId = 1;
+    int32 Error = 2;
+    string Message = 3;
+    repeated int32 SelfScore = 4;
+    repeated int64 PlayerId = 5;
+    repeated int32 EnemyScore = 6;
+}
+
+//========================================IActorLocationMessage========================================
+message G2M_SessionDisconnect // IActorLocationMessage
+{
+    int32 RpcId = 1;
+    int64 ActorId = 2;
+}

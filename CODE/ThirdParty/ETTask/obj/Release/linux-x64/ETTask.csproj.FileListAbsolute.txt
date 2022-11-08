@@ -1,0 +1,12 @@
+D:\Test\ET6.0Basic\CODE\Bin\linux-x64\ETTask.deps.json
+D:\Test\ET6.0Basic\CODE\Bin\linux-x64\ETTask.dll
+D:\Test\ET6.0Basic\CODE\Bin\linux-x64\ETTask.pdb
+D:\Test\ET6.0Basic\CODE\ThirdParty\ETTask\obj\Release\linux-x64\ETTask.csproj.AssemblyReference.cache
+D:\Test\ET6.0Basic\CODE\ThirdParty\ETTask\obj\Release\linux-x64\ETTask.GeneratedMSBuildEditorConfig.editorconfig
+D:\Test\ET6.0Basic\CODE\ThirdParty\ETTask\obj\Release\linux-x64\ETTask.AssemblyInfoInputs.cache
+D:\Test\ET6.0Basic\CODE\ThirdParty\ETTask\obj\Release\linux-x64\ETTask.AssemblyInfo.cs
+D:\Test\ET6.0Basic\CODE\ThirdParty\ETTask\obj\Release\linux-x64\ETTask.csproj.CoreCompileInputs.cache
+D:\Test\ET6.0Basic\CODE\ThirdParty\ETTask\obj\Release\linux-x64\ETTask.dll
+D:\Test\ET6.0Basic\CODE\ThirdParty\ETTask\obj\Release\linux-x64\refint\ETTask.dll
+D:\Test\ET6.0Basic\CODE\ThirdParty\ETTask\obj\Release\linux-x64\ETTask.pdb
+D:\Test\ET6.0Basic\CODE\ThirdParty\ETTask\obj\Release\linux-x64\ref\ETTask.dll

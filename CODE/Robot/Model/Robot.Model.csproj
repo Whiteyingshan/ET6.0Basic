@@ -1,0 +1,121 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<RootNamespace>ET</RootNamespace>
+		<TargetFramework>net6.0</TargetFramework>
+	</PropertyGroup>
+	<PropertyGroup>
+		<SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+		<OutputPath>../../Bin/</OutputPath>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+		<DefineConstants>TRACECOREAPP;NOT_UNITY</DefineConstants>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+		<OutputPath>../../Bin/</OutputPath>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+		<DefineConstants>TRACECOREAPP;NOT_UNITY</DefineConstants>
+	</PropertyGroup>
+	<ItemGroup>
+		<Reference Include="UnityEngine.UI">
+			<HintPath>..\..\Unity\Temp\bin\Debug\UnityEngine.UI.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\..\ThirdParty\ETTask\ETTask.csproj" />
+		<ProjectReference Include="..\..\ThirdParty\ShareLib\ShareLib.csproj" />
+		<ProjectReference Include="..\..\ThirdParty\UnityEngine\UnityEngine.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+		<Compile Remove="..\..\Unity\Codes\Model\Code\Extensions\OperationExtension.cs" />
+	</ItemGroup>
+	<ItemGroup>
+		<Compile Include="..\..\Server\Model\Base\MongoHelper.cs">
+			<Link>Base\MongoHelper.cs</Link>
+		</Compile>
+		<Compile Include="..\..\Server\Model\Base\MongoRegister.cs">
+			<Link>Base\MongoRegister.cs</Link>
+		</Compile>
+		<Compile Include="..\..\Server\Model\Base\StructBsonSerialize.cs">
+			<Link>Base\StructBsonSerialize.cs</Link>
+		</Compile>
+	</ItemGroup>
+	<ItemGroup>
+		<Compile Include="..\..\Server\Model\Generate\**\*.cs">
+			<Link>Generate\%(RecursiveDir)%(FileName)%(Extension)</Link>
+		</Compile>
+		<Compile Include="..\..\Server\Model\Module\Actor\**\*.cs">
+			<Link>Module\Actor\%(RecursiveDir)%(FileName)%(Extension)</Link>
+		</Compile>
+		<Compile Include="..\..\Server\Model\Module\Console\**\*.cs">
+			<Link>Module\Console\%(RecursiveDir)%(FileName)%(Extension)</Link>
+		</Compile>
+		<Compile Include="..\..\Server\Model\Module\Message\**\*.cs">
+			<Link>Module\Message\%(RecursiveDir)%(FileName)%(Extension)</Link>
+		</Compile>
+		<Compile Include="..\..\Server\Model\Module\MessageInner\**\*.cs">
+			<Link>Module\MessageInner\%(RecursiveDir)%(FileName)%(Extension)</Link>
+		</Compile>
+		<Compile Include="..\..\Server\Model\Module\NetworkTCP\**\*.cs">
+			<Link>Module\NetworkTCP\%(RecursiveDir)%(FileName)%(Extension)</Link>
+		</Compile>
+		<Compile Include="..\..\Unity\Assets\Mono\Core\**\*.cs">
+			<Link>Core\%(RecursiveDir)%(FileName)%(Extension)</Link>
+		</Compile>
+		<Compile Include="..\..\Unity\Assets\Mono\Module\Message\**\*.cs">
+			<Link>Module\Message\%(RecursiveDir)%(FileName)%(Extension)</Link>
+		</Compile>
+		<Compile Include="..\..\Unity\Assets\Mono\Module\Network\**\*.cs">
+			<Link>Module\Network\%(RecursiveDir)%(FileName)%(Extension)</Link>
+		</Compile>
+		<Compile Include="..\..\Unity\Assets\Mono\Module\NetworkTCP\**\*.cs">
+			<Link>Module\NetworkTCP\%(RecursiveDir)%(FileName)%(Extension)</Link>
+		</Compile>
+		<Compile Include="..\..\Unity\Codes\Model\Code\**\*.cs">
+			<Link>Code\%(RecursiveDir)%(FileName)%(Extension)</Link>
+		</Compile>
+		<Compile Include="..\..\Unity\Codes\Model\Core\**\*.cs">
+			<Link>Core\%(RecursiveDir)%(FileName)%(Extension)</Link>
+		</Compile>
+		<Compile Include="..\..\Unity\Codes\Model\Module\Actor\**\*.cs">
+			<Link>Module\Actor\%(RecursiveDir)%(FileName)%(Extension)</Link>
+		</Compile>
+		<Compile Include="..\..\Unity\Codes\Model\Module\ActorLocation\**\*.cs">
+			<Link>Module\ActorLocation\%(RecursiveDir)%(FileName)%(Extension)</Link>
+		</Compile>
+		<Compile Include="..\..\Unity\Codes\Model\Module\AI\**\*.cs">
+			<Link>Module\AI\%(RecursiveDir)%(FileName)%(Extension)</Link>
+		</Compile>
+		<Compile Include="..\..\Unity\Codes\Model\Module\Buff\**\*.cs">
+			<Link>Module\Buff\%(RecursiveDir)%(FileName)%(Extension)</Link>
+		</Compile>
+		<Compile Include="..\..\Unity\Codes\Model\Module\Config\**\*.cs">
+			<Link>Module\Config\%(RecursiveDir)%(FileName)%(Extension)</Link>
+		</Compile>
+		<Compile Include="..\..\Unity\Codes\Model\Module\CoroutineLock\**\*.cs">
+			<Link>Module\CoroutineLock\%(RecursiveDir)%(FileName)%(Extension)</Link>
+		</Compile>
+		<Compile Include="..\..\Unity\Codes\Model\Module\IOC\**\*.cs">
+			<Link>Module\IOC\%(RecursiveDir)%(FileName)%(Extension)</Link>
+		</Compile>
+		<Compile Include="..\..\Unity\Codes\Model\Module\Message\**\*.cs">
+			<Link>Module\Message\%(RecursiveDir)%(FileName)%(Extension)</Link>
+		</Compile>
+		<Compile Include="..\..\Unity\Codes\Model\Module\Numeric\**\*.cs">
+			<Link>Module\Numeric\%(RecursiveDir)%(FileName)%(Extension)</Link>
+		</Compile>
+		<Compile Include="..\..\Unity\Codes\Model\Module\Ping\**\*.cs">
+			<Link>Module\Ping\%(RecursiveDir)%(FileName)%(Extension)</Link>
+		</Compile>
+		<Compile Include="..\..\Unity\Codes\Model\Module\Scene\**\*.cs">
+			<Link>Module\Scene\%(RecursiveDir)%(FileName)%(Extension)</Link>
+		</Compile>
+		<Compile Include="..\..\Unity\Codes\Model\Module\Tactics\**\*.cs">
+			<Link>Module\Tactics\%(RecursiveDir)%(FileName)%(Extension)</Link>
+		</Compile>
+		<Compile Include="..\..\Unity\Codes\Model\Module\Skill\**\*.cs">
+			<Link>Module\Skill\%(RecursiveDir)%(FileName)%(Extension)</Link>
+		</Compile>
+	</ItemGroup>
+</Project>

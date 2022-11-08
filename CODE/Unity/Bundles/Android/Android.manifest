@@ -1,0 +1,11 @@
+ManifestFileVersion: 0
+CRC: 4161396865
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: assets_bundles_video_videoplayer_df27b8b246f2aeccf3369c08d6b3c1d0
+      Dependencies:
+        Dependency_0: assets_bundles_video_videoplayerrendertexture_d34ac531e372b2cbf1c9f8cf8b1f85c0
+    Info_1:
+      Name: assets_bundles_video_videoplayerrendertexture_d34ac531e372b2cbf1c9f8cf8b1f85c0
+      Dependencies: {}

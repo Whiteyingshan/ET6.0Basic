@@ -1,0 +1,2 @@
+D:\JZJML\CODE\Unity\obj\Release\Unity.FairyGUI.Editor.csproj.AssemblyReference.cache
+D:\JZJML\CODE\Unity\obj\Release\Unity.FairyGUI.Editor.csproj.CoreCompileInputs.cache

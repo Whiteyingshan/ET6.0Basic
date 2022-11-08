@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="1zajtdly">
+  <resources>
+    <sound id="r3dy25q" name="Click_0001.mp3" path="/Sound/" exported="true"/>
+    <sound id="d3l82ip" name="ManorClick_0001.ogg" path="/Sound/" exported="true"/>
+    <sound id="r9ni2jf" name="EquipCoalesce.ogg" path="/Sound/" exported="true"/>
+  </resources>
+  <publish name="">
+    <atlas name="BigImg" index="5"/>
+    <atlas name="EffectBgGif1" index="6"/>
+    <atlas name="EffectBgGif2" index="7"/>
+    <atlas name="Effect24fps" index="8"/>
+    <atlas name="Effect30fps" index="9"/>
+    <atlas name="Effect60fps" index="10"/>
+  </publish>
+</packageDescription>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="590,390">
+  <displayList>
+    <graph id="n2_sbpg" name="BG" xy="0,0" size="590,390" type="rect" fillColor="#b2ffffff"/>
+    <text id="n3_sbpg" name="PassWordTitle" xy="83,152" size="93,42" group="n9_sbpg" aspect="true" fontSize="29" autoSize="none" text="密码："/>
+    <text id="n4_sbpg" name="AccountTitle" xy="83,90" size="92,40" group="n9_sbpg" aspect="true" fontSize="29" autoSize="none" text="账号："/>
+    <image id="n5_sbpg" name="Res_Img_LoginComponent_FiledBG1" src="hg9l3b" fileName="资源/BG_3.png" xy="219,86" size="287,49" group="n9_sbpg">
+      <relation target="n6_sbpg" sidePair="center-center,middle-middle"/>
+    </image>
+    <text id="n6_sbpg" name="Res_Text_LoginComponent_AccountTextFiled" xy="254,86" size="216,49" group="n9_sbpg" font="Microsoft YaHei" fontSize="35" color="#ece6de" vAlign="middle" leading="0" autoSize="none" strokeColor="#3a322c" singleLine="true" autoClearText="true" text="14164515" input="true" prompt="[color=#FFFBF5][I]请输入账号...[/I][/color]" maxLength="16"/>
+    <image id="n7_sbpg" name="Res_Img_LoginComponent_FiledBG2" src="hg9l3b" fileName="资源/BG_3.png" xy="219,148" size="287,49" group="n9_sbpg">
+      <relation target="n8_sbpg" sidePair="center-center,middle-middle"/>
+    </image>
+    <text id="n8_sbpg" name="Res_Text_LoginComponent_PasswordTextFiled" xy="254,148" size="216,49" group="n9_sbpg" font="Microsoft YaHei" fontSize="35" color="#ece6de" vAlign="middle" leading="0" autoSize="none" strokeColor="#3a322c" singleLine="true" autoClearText="true" text="2A_666" input="true" prompt="[color=#FFFBF5][I]请输入密码...[/I][/color]" maxLength="16" password="true"/>
+    <group id="n9_sbpg" name="LoginTextFiledGroup" xy="83,86" size="423,111" advanced="true">
+      <relation target="" sidePair="center-center%,middle-middle%"/>
+    </group>
+    <component id="n10_sbpg" name="Res_Btn_LoginComponent_RegisterBtn" src="hg9l3d" fileName="组件/NormalButton.xml" xy="83,256" size="156,58">
+      <relation target="" sidePair="left-left,bottom-bottom"/>
+      <Button title="注册" titleFontSize="30"/>
+    </component>
+    <component id="n11_sbpg" name="Res_Btn_LoginComponent_LoginBtn" src="hg9l3d" fileName="组件/NormalButton.xml" xy="350,256" size="156,58">
+      <relation target="" sidePair="right-right,bottom-bottom"/>
+      <Button title="登录" titleFontSize="30"/>
+    </component>
+  </displayList>
+</component>

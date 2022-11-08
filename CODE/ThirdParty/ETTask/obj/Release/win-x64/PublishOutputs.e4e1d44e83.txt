@@ -1,0 +1,3 @@
+D:\Test\ET6.0Basic\CODE\Bin\win-x64\publish\ETTask.dll
+D:\Test\ET6.0Basic\CODE\Bin\win-x64\publish\ETTask.deps.json
+D:\Test\ET6.0Basic\CODE\Bin\win-x64\publish\ETTask.pdb

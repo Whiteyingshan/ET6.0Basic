@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="frpzwf8a">
+  <resources>
+    <component id="sbpgz38r" name="GameLobby.xml" path="/" exported="true"/>
+  </resources>
+  <publish name="">
+    <atlas name="Effect60fps" index="9"/>
+    <atlas name="Effect24fps" index="10"/>
+  </publish>
+</packageDescription>

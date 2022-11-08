@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="720,1280" extention="Label" initName="frame">
+  <controller name="BtnStyleController" pages="0,NoBtn,1,BtnOk,2,BtnOkCancel" selected="2"/>
+  <controller name="ContentStyleController" pages="0,Message,1,IconList,2,MessageAndIconList" selected="0"/>
+  <displayList>
+    <graph id="n8_d769" name="BG" xy="0,0" size="721,1285" alpha="0.8" type="rect" fillColor="#ff000000">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <graph id="n9_d769" name="icon" xy="360,642" pivot="0.5,0.5" anchor="true" size="618,410" touchable="false" type="rect" fillColor="#ff003333">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </graph>
+    <text id="n10_d769" name="title" xy="359,469" pivot="0.5,0.5" anchor="true" size="84,48" font="Microsoft YaHei" fontSize="35" color="#f0e0b3" align="center" vAlign="middle" ubb="true" text="通 知">
+      <relation target="n9_d769" sidePair="left-left,top-top"/>
+    </text>
+    <graph id="n23_sbpg" name="n23" xy="70,499" size="580,286" type="rect" fillColor="#b266ff33"/>
+    <richtext id="n13_d769" name="RichText_MessageContent" xy="72,515" size="571,254" touchable="false" font="Microsoft YaHei" fontSize="28" color="#642c18" align="center" vAlign="middle" leading="15" ubb="true" vars="true" autoSize="shrink" autoClearText="true" text="[color=#814c67][/color][size=40]获得5★英雄几率双倍[/size]&#xA;[size=30]5★英雄限定 莉莉白 博丽灵梦 几率UP！[/size]&#xA;">
+      <gearDisplay controller="ContentStyleController" pages="0,2"/>
+      <gearSize controller="ContentStyleController" pages="0,2" values="571,254,1,1|567,143,1,1" default="639,379,1,1"/>
+      <relation target="n9_d769" sidePair="right-right,top-top"/>
+    </richtext>
+    <list id="n14_d769" name="List_IconList" xy="46,637" size="548,110" layout="row" overflow="scroll" scroll="horizontal" scrollBarFlags="258" margin="0,0,30,0" colGap="45" defaultItem="ui://5ardt36yang3d7" align="center" vAlign="middle" autoClearItems="true">
+      <gearDisplay controller="ContentStyleController" pages="1,2"/>
+      <gearXY controller="ContentStyleController" pages="0,1,2" values="46,637|86,587|86,666"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <component id="n20_ang3" name="Btn_OK" src="ang3d6" fileName="通知/组件/NoticeBtn.xml" xy="500,817" pivot="0.5,0.5" anchor="true" size="150,58">
+      <gearDisplay controller="BtnStyleController" pages="1,2"/>
+      <gearXY controller="BtnStyleController" pages="1,2" values="360,817|500,817" default="640,465"/>
+      <Button title="确认" titleColor="#f3ebd8" titleFontSize="35"/>
+    </component>
+    <component id="n21_ang3" name="Btn_Cancel" src="ang3d6" fileName="通知/组件/NoticeBtn.xml" xy="216,817" pivot="0.5,0.5" anchor="true" size="150,58">
+      <gearDisplay controller="BtnStyleController" pages="2"/>
+      <gearXY controller="BtnStyleController" pages="1,2" values="497,867|216,817" default="371,472"/>
+      <Button title="取消" titleColor="#f3ebd8" titleFontSize="35"/>
+    </component>
+  </displayList>
+</component>

@@ -1,0 +1,85 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<RootNamespace>ET</RootNamespace>
+		<TargetFramework>net6.0</TargetFramework>
+	</PropertyGroup>
+	<PropertyGroup>
+		<SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+		<OutputPath>../../Bin/</OutputPath>
+		<DefineConstants>TRACECOREAPP;NOT_UNITY</DefineConstants>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+		<OutputPath>../../Bin/</OutputPath>
+		<DefineConstants>TRACECOREAPP;NOT_UNITY</DefineConstants>
+	</PropertyGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\Model\Robot.Model.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+		<Folder Include="Server" />
+	</ItemGroup>
+	<ItemGroup>
+		<Compile Include="..\..\Server\Hotfix\Code\System\Gate\Session\InnerMessageDispatcherHelper.cs">
+			<Link>Server\Session\InnerMessageDispatcherHelper.cs</Link>
+		</Compile>
+		<Compile Include="..\..\Server\Hotfix\Code\System\Gate\Session\SessionStreamDispatcherServerInner.cs">
+			<Link>Server\Session\SessionStreamDispatcherServerInner.cs</Link>
+		</Compile>
+	</ItemGroup>
+	<ItemGroup>
+		<Compile Include="..\..\Server\Hotfix\Config\**\*.cs">
+			<Link>Config\%(RecursiveDir)%(FileName)%(Extension)</Link>
+		</Compile>
+		<Compile Include="..\..\Server\Hotfix\Module\Actor\**\*.cs">
+			<Link>Module\Actor\%(RecursiveDir)%(FileName)%(Extension)</Link>
+		</Compile>
+		<Compile Include="..\..\Server\Hotfix\Module\Console\**\*.cs">
+			<Link>Module\Console\%(RecursiveDir)%(FileName)%(Extension)</Link>
+		</Compile>
+		<Compile Include="..\..\Server\Hotfix\Module\Message\**\*.cs">
+			<Link>Module\Message\%(RecursiveDir)%(FileName)%(Extension)</Link>
+		</Compile>
+		<Compile Include="..\..\Server\Hotfix\Module\MessageInner\**\*.cs">
+			<Link>Module\MessageInner\%(RecursiveDir)%(FileName)%(Extension)</Link>
+		</Compile>
+		<Compile Include="..\..\Server\Hotfix\Module\NetworkTCP\**\*.cs">
+			<Link>Module\NetworkTCP\%(RecursiveDir)%(FileName)%(Extension)</Link>
+		</Compile>
+		<Compile Include="..\..\Unity\Codes\Hotfix\Code\**\*.cs">
+			<Link>Code\%(RecursiveDir)%(FileName)%(Extension)</Link>
+		</Compile>
+		<Compile Include="..\..\Unity\Codes\Hotfix\Module\AI\**\*.cs">
+			<Link>Module\AI\%(RecursiveDir)%(FileName)%(Extension)</Link>
+		</Compile>
+		<Compile Include="..\..\Unity\Codes\Hotfix\Module\Buff\**\*.cs">
+			<Link>Module\Buff\%(RecursiveDir)%(FileName)%(Extension)</Link>
+		</Compile>
+		<Compile Include="..\..\Unity\Codes\Hotfix\Module\Config\**\*.cs">
+			<Link>Module\Config\%(RecursiveDir)%(FileName)%(Extension)</Link>
+		</Compile>
+		<Compile Include="..\..\Unity\Codes\Hotfix\Module\IOC\**\*.cs">
+			<Link>Module\IOC\%(RecursiveDir)%(FileName)%(Extension)</Link>
+		</Compile>
+		<Compile Include="..\..\Unity\Codes\Hotfix\Module\Message\**\*.cs">
+			<Link>Module\Message\%(RecursiveDir)%(FileName)%(Extension)</Link>
+		</Compile>
+		<Compile Include="..\..\Unity\Codes\Hotfix\Module\MessageOuter\**\*.cs">
+			<Link>Module\MessageOuter\%(RecursiveDir)%(FileName)%(Extension)</Link>
+		</Compile>
+		<Compile Include="..\..\Unity\Codes\Hotfix\Module\Numeric\**\*.cs">
+			<Link>Module\Numeric\%(RecursiveDir)%(FileName)%(Extension)</Link>
+		</Compile>
+		<Compile Include="..\..\Unity\Codes\Hotfix\Module\Ping\**\*.cs">
+			<Link>Module\Ping\%(RecursiveDir)%(FileName)%(Extension)</Link>
+		</Compile>
+		<Compile Include="..\..\Unity\Codes\Hotfix\Module\Tactics\**\*.cs">
+			<Link>Module\Tactics\%(RecursiveDir)%(FileName)%(Extension)</Link>
+		</Compile>
+		<Compile Include="..\..\Unity\Codes\Hotfix\Module\ManagerEx\**\*.cs">
+			<Link>Module\ManagerEx\%(RecursiveDir)%(FileName)%(Extension)</Link>
+		</Compile>
+	</ItemGroup>
+</Project>

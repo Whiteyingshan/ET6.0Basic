@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 3982034176
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 8b36158a08c2bc55c1e6ba7791e51fe2
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: dc341dc0f7c6c0a9638ce6530d135453
+HashAppended: 1
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 49
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Bundles/FUI/_Resources_Icons/_Resources_Icons_atlas0.png
+- Assets/Bundles/FUI/_Resources_Icons/_Resources_Icons_fui.bytes
+Dependencies: []

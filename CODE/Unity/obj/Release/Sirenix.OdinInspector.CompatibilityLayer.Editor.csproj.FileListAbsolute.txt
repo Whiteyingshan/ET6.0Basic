@@ -1,0 +1,2 @@
+D:\JZJML\CODE\Unity\obj\Release\Sirenix.OdinInspector.CompatibilityLayer.Editor.csproj.AssemblyReference.cache
+D:\JZJML\CODE\Unity\obj\Release\Sirenix.OdinInspector.CompatibilityLayer.Editor.csproj.CoreCompileInputs.cache

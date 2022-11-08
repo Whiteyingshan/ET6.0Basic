@@ -1,0 +1,11 @@
+{
+  "name": "CodeGen",
+  "displayName": "CodeGen",
+  "description": "FairyGUI自动生成ET代码的插件",
+  "version": "1.0",
+  "author": {
+    "name": "Me"
+  },
+  "icon": "",
+  "main": "main.js"
+}

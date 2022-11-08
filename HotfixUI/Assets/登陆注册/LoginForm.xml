@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="720,1280">
+  <controller name="GameStartController" pages="0,GameReady,1,LoginAndRegister,3,LodingGameLobby" selected="1">
+    <action type="play_transition" fromPage="0" toPage="1" transition="Animation_EnterGameComplete"/>
+    <action type="play_transition" fromPage="1" toPage="2" transition="Animation_LoginComplete" stopOnExit="true"/>
+    <action type="play_transition" fromPage="0" toPage="3" transition="Animation_LodingStart" stopOnExit="true"/>
+    <action type="play_transition" fromPage="2,3" toPage="1" transition="Animation_EnterGameComplete" stopOnExit="true"/>
+    <action type="play_transition" fromPage="1" toPage="3" transition="Animation_LodingStart" stopOnExit="true"/>
+    <action type="play_transition" fromPage="2" toPage="3" transition="Animation_LodingStart" stopOnExit="true"/>
+    <action type="play_transition" fromPage="0" toPage="4" transition="Animation_EnterSelectServer"/>
+    <action type="play_transition" fromPage="4" toPage="3" transition="Animation_LodingStart"/>
+    <action type="play_transition" fromPage="3,4" toPage="0" transition="Animation_EnterGame"/>
+  </controller>
+  <displayList>
+    <graph id="n94_sbpg" name="BG" xy="0,0" size="720,1280" type="rect" fillColor="#ff333333">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <component id="n86_d0e1" name="Component_LoginAndRegister" src="d0e13m" fileName="组件/LoginAndRegister/LoginAndRegisterComponent.xml" xy="65,445">
+      <gearDisplay controller="GameStartController" pages="1"/>
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </component>
+    <image id="n2_fmzg" name="Res_Img_GameStart_StartBtnBG" src="s1qb6" fileName="资源/LoginBtn_Bg.png" xy="333,1228" pivot="0.5,0.5" anchor="true" size="500,56" group="n28_byls" alpha="0.89">
+      <relation target="" sidePair="center-center,bottom-bottom"/>
+    </image>
+    <image id="n3_fmzg" name="Res_Img_GameStart_StartBtnText" src="s1qb5" fileName="资源/LoginBtn_Text.png" xy="333,1225" pivot="0.5,0.5" anchor="true" size="198,43" group="n28_byls" alpha="0.89">
+      <relation target="n2_fmzg" sidePair="center-center,middle-middle"/>
+    </image>
+    <component id="n8_rbky" name="Btn_GameStart" src="sbpg6c" fileName="组件/LoginBtn.xml" xy="0,0" size="719,1279" group="n28_byls" alpha="0.89">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <group id="n28_byls" name="StartBtnGroup" xy="0,0" size="719,1279" alpha="0.89" advanced="true">
+      <gearDisplay controller="GameStartController" pages="0"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </group>
+    <text id="n91_hgdg" name="Text_LoadingTips" xy="81,1112" size="557,39" font="Microsoft YaHei" fontSize="28" color="#ffffff" align="center" vAlign="middle" vars="true" strokeColor="#000000" text="加载与解析会稍有卡顿属正常现象请勿中断...">
+      <gearDisplay controller="GameStartController" pages="3"/>
+      <relation target="" sidePair="center-center,bottom-bottom"/>
+    </text>
+  </displayList>
+</component>

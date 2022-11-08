@@ -1,0 +1,2 @@
+namespace ET.Module.Numeric
+{}

@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+		<BaseIntermediateOutputPath>..\..\obj</BaseIntermediateOutputPath>
+		<BaseOutputPath>..\..\Temp\Bin</BaseOutputPath>
+		<DebugSymbols>false</DebugSymbols>
+		<DebugType>none</DebugType>
+		<ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
+		<ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
+		<NoConfig>true</NoConfig>
+		<RootNamespace>ET</RootNamespace>
+		<TargetFramework>net471</TargetFramework>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Remove="obj\**" />
+		<Compile Remove="obj\**" />
+		<EmbeddedResource Remove="obj\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\Unity.Mono.csproj" />
+		<ProjectReference Include="..\..\Unity.ThirdParty.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Reference Include="UnityEngine.CoreModule">
+			<HintPath>..\..\Temp\Bin\Debug\UnityEngine.CoreModule.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Code\Entities\Player\ItemManager\Additional\" />
+	  <Folder Include="Core\Component\SkillManagerComponent\" />
+	</ItemGroup>
+
+</Project>

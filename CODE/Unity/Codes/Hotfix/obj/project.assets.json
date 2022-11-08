@@ -1,0 +1,191 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.7.1": {
+      "spine-unity/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Unity.ThirdParty": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/spine-unity.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/spine-unity.dll": {}
+        }
+      },
+      "spine-unity-editor/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "spine-unity": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/spine-unity-editor.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/spine-unity-editor.dll": {}
+        }
+      },
+      "Unity.FairyGUI.Runtime/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Unity.FairyGUI.Runtime.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Unity.FairyGUI.Runtime.dll": {}
+        }
+      },
+      "Unity.Model/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.1",
+        "dependencies": {
+          "Unity.Mono": "1.0.0",
+          "Unity.ThirdParty": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Unity.Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Unity.Model.dll": {}
+        }
+      },
+      "Unity.Mono/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Unity.FairyGUI.Runtime": "1.0.0",
+          "Unity.ThirdParty": "1.0.0",
+          "VEngine": "1.0.0",
+          "spine-unity": "1.0.0",
+          "spine-unity-editor": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Unity.Mono.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Unity.Mono.dll": {}
+        }
+      },
+      "Unity.ThirdParty/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Unity.ThirdParty.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Unity.ThirdParty.dll": {}
+        }
+      },
+      "VEngine/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/VEngine.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VEngine.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "spine-unity/1.0.0": {
+      "type": "project",
+      "path": "../../spine-unity.csproj",
+      "msbuildProject": "../../spine-unity.csproj"
+    },
+    "spine-unity-editor/1.0.0": {
+      "type": "project",
+      "path": "../../spine-unity-editor.csproj",
+      "msbuildProject": "../../spine-unity-editor.csproj"
+    },
+    "Unity.FairyGUI.Runtime/1.0.0": {
+      "type": "project",
+      "path": "../../Unity.FairyGUI.Runtime.csproj",
+      "msbuildProject": "../../Unity.FairyGUI.Runtime.csproj"
+    },
+    "Unity.Model/1.0.0": {
+      "type": "project",
+      "path": "../Model/Unity.Model.csproj",
+      "msbuildProject": "../Model/Unity.Model.csproj"
+    },
+    "Unity.Mono/1.0.0": {
+      "type": "project",
+      "path": "../../Unity.Mono.csproj",
+      "msbuildProject": "../../Unity.Mono.csproj"
+    },
+    "Unity.ThirdParty/1.0.0": {
+      "type": "project",
+      "path": "../../Unity.ThirdParty.csproj",
+      "msbuildProject": "../../Unity.ThirdParty.csproj"
+    },
+    "VEngine/1.0.0": {
+      "type": "project",
+      "path": "../../VEngine.csproj",
+      "msbuildProject": "../../VEngine.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.7.1": [
+      "Unity.Model >= 1.0.0",
+      "Unity.Mono >= 1.0.0",
+      "Unity.ThirdParty >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Admin\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\Test\\ET6.0Basic\\CODE\\Unity\\Codes\\Hotfix\\Unity.Hotfix.csproj",
+      "projectName": "Unity.Hotfix",
+      "projectPath": "D:\\Test\\ET6.0Basic\\CODE\\Unity\\Codes\\Hotfix\\Unity.Hotfix.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "D:\\Test\\ET6.0Basic\\CODE\\Unity\\Codes\\Hotfix\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net471"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net471": {
+          "targetAlias": "net471",
+          "projectReferences": {
+            "D:\\Test\\ET6.0Basic\\CODE\\Unity\\Codes\\Model\\Unity.Model.csproj": {
+              "projectPath": "D:\\Test\\ET6.0Basic\\CODE\\Unity\\Codes\\Model\\Unity.Model.csproj"
+            },
+            "D:\\Test\\ET6.0Basic\\CODE\\Unity\\Unity.Mono.csproj": {
+              "projectPath": "D:\\Test\\ET6.0Basic\\CODE\\Unity\\Unity.Mono.csproj"
+            },
+            "D:\\Test\\ET6.0Basic\\CODE\\Unity\\Unity.ThirdParty.csproj": {
+              "projectPath": "D:\\Test\\ET6.0Basic\\CODE\\Unity\\Unity.ThirdParty.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net471": {
+        "targetAlias": "net471",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

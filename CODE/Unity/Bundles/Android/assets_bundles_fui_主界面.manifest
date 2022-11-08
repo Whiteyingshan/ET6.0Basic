@@ -1,0 +1,35 @@
+ManifestFileVersion: 0
+CRC: 1791660031
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 7533389f3a048c6b9484cc450498b99e
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: dc341dc0f7c6c0a9638ce6530d135453
+HashAppended: 1
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 49
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- "Assets/Bundles/FUI/\u4E3B\u754C\u9762/\u4E3B\u754C\u9762_atlas0.png"
+- "Assets/Bundles/FUI/\u4E3B\u754C\u9762/\u4E3B\u754C\u9762_atlas0_6.png"
+- "Assets/Bundles/FUI/\u4E3B\u754C\u9762/\u4E3B\u754C\u9762_atlas_iv14z344.png"
+- "Assets/Bundles/FUI/\u4E3B\u754C\u9762/\u4E3B\u754C\u9762_atlas0_5.png"
+- "Assets/Bundles/FUI/\u4E3B\u754C\u9762/\u4E3B\u754C\u9762_atlas_7h0zz335.png"
+- "Assets/Bundles/FUI/\u4E3B\u754C\u9762/\u4E3B\u754C\u9762_atlas_klvqz35u.png"
+- "Assets/Bundles/FUI/\u4E3B\u754C\u9762/\u4E3B\u754C\u9762_atlas0_8.png"
+- "Assets/Bundles/FUI/\u4E3B\u754C\u9762/\u4E3B\u754C\u9762_atlas0_10.png"
+- "Assets/Bundles/FUI/\u4E3B\u754C\u9762/\u4E3B\u754C\u9762_fui.bytes"
+- "Assets/Bundles/FUI/\u4E3B\u754C\u9762/\u4E3B\u754C\u9762_atlas_7h0zz337.png"
+- "Assets/Bundles/FUI/\u4E3B\u754C\u9762/\u4E3B\u754C\u9762_atlas0_3.png"
+- "Assets/Bundles/FUI/\u4E3B\u754C\u9762/\u4E3B\u754C\u9762_atlas_9xkqz35m.png"
+- "Assets/Bundles/FUI/\u4E3B\u754C\u9762/\u4E3B\u754C\u9762_atlas0_4.png"
+- "Assets/Bundles/FUI/\u4E3B\u754C\u9762/\u4E3B\u754C\u9762_atlas0_9.png"
+- "Assets/Bundles/FUI/\u4E3B\u754C\u9762/\u4E3B\u754C\u9762_atlas0_2.png"
+- "Assets/Bundles/FUI/\u4E3B\u754C\u9762/\u4E3B\u754C\u9762_atlas0_1.png"
+- "Assets/Bundles/FUI/\u4E3B\u754C\u9762/\u4E3B\u754C\u9762_atlas0_7.png"
+Dependencies: []

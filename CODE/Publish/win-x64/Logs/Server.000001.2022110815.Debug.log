@@ -1,0 +1,37 @@
+2022-11-08 15:49:00.6653 (Scene.cs:33) scene create: Process Process 1848453593762627585 1848453593762627585 0
+2022-11-08 15:49:00.6836 (Program.cs:12) server start........................ 1848453593762627585
+2022-11-08 15:49:00.7793 (Scene.cs:48) scene create: Realm Realm 1 262145 1
+2022-11-08 15:49:00.9215 (Scene.cs:48) scene create: Location Location 2 262146 1
+2022-11-08 15:49:00.9215 (Scene.cs:48) scene create: Gate Gate1 3 262147 1
+2022-11-08 15:49:04.8007 (Session.cs:70) session create: zone: 1 id: 8589934592 1667893744800 
+2022-11-08 15:49:04.8068 (ProtobufHelper.cs:47) ET.C2R_Login
+2022-11-08 15:49:04.8068 (SessionStreamDispatcherServerOuter.cs:24) zone: 1 { "_t" : "C2R_Login", "RpcId" : 1, "Username" : "01", "Password" : "01" }
+2022-11-08 15:49:04.9291 (Session.cs:189) zone: 1 { "_t" : "R2C_Login", "RpcId" : 1, "Error" : 0, "Message" : "7844328590805728766", "Age" : 0 }
+2022-11-08 15:49:04.9399 (TChannel.cs:403) TChannel OnError: 100208 127.0.0.1:61157
+2022-11-08 15:49:04.9399 (TChannel.cs:102) channel dispose: 8589934592 127.0.0.1:61157
+2022-11-08 15:49:04.9399 (Session.cs:75) session dispose: 127.0.0.1:61157 zone: 1 id: 8589934592 ErrorCode: 100208, please see ErrorCode.cs! 1667893744943
+2022-11-08 15:49:04.9399 (Session.cs:70) session create: zone: 1 id: 12884901888 1667893744943 
+2022-11-08 15:49:04.9399 (ProtobufHelper.cs:47) ET.C2R_GetServers
+2022-11-08 15:49:04.9399 (SessionStreamDispatcherServerOuter.cs:24) zone: 1 { "_t" : "C2R_GetServers", "RpcId" : 2 }
+2022-11-08 15:49:04.9465 (Session.cs:189) zone: 1 { "_t" : "R2C_GetServers", "Servers" : [], "RpcId" : 2, "Error" : 0, "Message" : null, "Address" : "127.0.0.1:11001" }
+2022-11-08 15:49:04.9465 (TChannel.cs:403) TChannel OnError: 100208 127.0.0.1:61159
+2022-11-08 15:49:04.9465 (TChannel.cs:102) channel dispose: 12884901888 127.0.0.1:61159
+2022-11-08 15:49:04.9465 (Session.cs:75) session dispose: 127.0.0.1:61159 zone: 1 id: 12884901888 ErrorCode: 100208, please see ErrorCode.cs! 1667893744954
+2022-11-08 15:49:04.9465 (Session.cs:70) session create: zone: 1 id: 8589934592 1667893744954 
+2022-11-08 15:49:04.9707 (ProtobufHelper.cs:47) ET.C2G_Ping
+2022-11-08 15:49:04.9707 (ProtobufHelper.cs:47) ET.C2G_LoginGate
+2022-11-08 15:49:04.9707 (SessionStreamDispatcherServerOuter.cs:24) zone: 1 { "_t" : "C2G_LoginGate", "RpcId" : 4, "Token" : "7844328590805728766" }
+2022-11-08 15:49:04.9906 (Session.cs:70) session create: zone: 0 id: 1 1667893744990 
+2022-11-08 15:49:05.0030 (Session.cs:70) session create: zone: 0 id: 8589934592 1667893745003 
+2022-11-08 15:49:05.0030 (ProtobufHelper.cs:47) ET.G2R_CheckLoginKey
+2022-11-08 15:49:05.0030 (SessionStreamDispatcherServerInner.cs:53) zone: 0 { "_t" : "G2R_CheckLoginKey", "RpcId" : 1, "Token" : "7844328590805728766" }
+2022-11-08 15:49:05.0105 (Session.cs:199) zone: 0 { "_t" : "R2G_CheckLoginKey", "RpcId" : 1, "Error" : 0, "Message" : null, "UUID" : "1365462631" }
+2022-11-08 15:49:05.0105 (ProtobufHelper.cs:47) ET.R2G_CheckLoginKey
+2022-11-08 15:49:05.0105 (SessionStreamDispatcherServerInner.cs:53) zone: 0 { "_t" : "R2G_CheckLoginKey", "RpcId" : 1, "Error" : 0, "Message" : null, "UUID" : "1365462631" }
+2022-11-08 15:49:05.0554 (Session.cs:189) zone: 1 { "_t" : "G2C_LoginGate", "RpcId" : 4, "Error" : 0, "Message" : null, "AccountZoneInfo" : { "Players" : [{ "Value" : [1547140695687495681], "Key" : "1" }], "_id" : 0 } }
+2022-11-08 15:49:05.0813 (ProtobufHelper.cs:47) ET.C2G_LoginPlayer
+2022-11-08 15:49:05.0813 (SessionStreamDispatcherServerOuter.cs:24) zone: 1 { "_t" : "C2G_LoginPlayer", "RpcId" : 5, "PlayerId" : 1547140695687495681 }
+2022-11-08 15:49:05.1062 (Session.cs:189) zone: 1 { "_t" : "G2C_LoginPlayer", "RpcId" : 5, "Error" : 0, "Message" : null, "PlayerInfo" : { "PlayerId" : 1547140695687495681, "BasicDataInfo" : { "Account" : "1365462631", "Nickname" : "Player", "UnitId" : 0 }, "NumericInfo" : { "Numerics" : [] }, "ItemManagerInfo" : null, "MailComponentInfo" : null, "SeasonComponentInfo" : null, "BattleArrayComponentInfo" : null, "AchievementComponentInfo" : null, "SquadsControllerComponentInfo" : null, "GongFaComponentInfo" : null }, "NikiName" : null }
+2022-11-08 15:49:06.7470 (TChannel.cs:403) TChannel OnError: 100208 127.0.0.1:61160
+2022-11-08 15:49:06.7470 (TChannel.cs:102) channel dispose: 8589934592 127.0.0.1:61160
+2022-11-08 15:49:06.7766 (Session.cs:75) session dispose: 127.0.0.1:61160 zone: 1 id: 8589934592 ErrorCode: 100208, please see ErrorCode.cs! 1667893746776

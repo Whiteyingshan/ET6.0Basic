@@ -1,0 +1,4 @@
+D:\JZJML\CODE\Unity\obj\Release\spine-unity.csproj.AssemblyReference.cache
+D:\JZJML\CODE\Unity\obj\Release\spine-unity.csproj.CoreCompileInputs.cache
+D:\Test\ET6.0Basic\CODE\Unity\obj\Release\spine-unity.csproj.AssemblyReference.cache
+D:\Test\ET6.0Basic\CODE\Unity\obj\Release\spine-unity.csproj.CoreCompileInputs.cache

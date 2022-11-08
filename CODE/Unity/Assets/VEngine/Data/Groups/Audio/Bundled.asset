@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6936db2c93d988b41a895e32be05af0a, type: 3}
+  m_Name: Bundled
+  m_EditorClassIdentifier: 
+  bundleMode: 6
+  manifest: {fileID: 11400000, guid: fbd096f31efb315478f07c8185a47d18, type: 2}
+  assets:
+  - _target: {fileID: 102900000, guid: 77146ddbcb349994ca97ffa1efef81a8, type: 3}
+    label: 
+    bundles: []
+    dependencies: []
+    readOnly: 0
+    path: Assets/Bundles/Audio
+    rootPath: 
+    parentGroup: {fileID: 11400000}
+    bundle: 
+  includeInBuild: 1
+  readOnly: 1

@@ -1,0 +1,88 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<LangVersion>8</LangVersion>
+		<RootNamespace>ET</RootNamespace>
+		<TargetFramework>net6.0</TargetFramework>
+		<SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<DefineConstants>TRACE2_0;SERVER;NOT_UNITY</DefineConstants>
+		<OutputPath>..\..\Bin\</OutputPath>
+		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<DefineConstants>TRACE2_0;SERVER;NOT_UNITY</DefineConstants>
+		<OutputPath>..\..\Bin\</OutputPath>
+		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+	</PropertyGroup>
+	<ItemGroup>
+		<Compile Include="..\..\Unity\Codes\Hotfix\Code\Helper\ConvertHelper.cs" Link="Code\Helper\ConvertHelper.cs" />
+		<Compile Include="..\..\Unity\Codes\Hotfix\Module\Config\ConfigComponentSystem.cs" Link="Module\Config\ConfigComponentSystem.cs" />
+	</ItemGroup>
+	<ItemGroup>
+		<Compile Include="..\..\Unity\Codes\Hotfix\Code\IOC\**\*.cs">
+			<Link>Code\IOC\%(RecursiveDir)%(FileName)%(Extension)</Link>
+		</Compile>
+		<Compile Include="..\..\Unity\Codes\Hotfix\Code\System\Achievement\**\*.cs">
+			<Link>Code\System\Gate\Achievement\%(RecursiveDir)%(FileName)%(Extension)</Link>
+		</Compile>
+		<Compile Include="..\..\Unity\Codes\Hotfix\Code\System\Move\**\*.cs">
+			<Link>Code\System\Gate\Move\%(RecursiveDir)%(FileName)%(Extension)</Link>
+		</Compile>
+		<Compile Include="..\..\Unity\Codes\Hotfix\Code\System\Player\**\*.cs">
+			<Link>Code\System\Gate\Player\%(RecursiveDir)%(FileName)%(Extension)</Link>
+		</Compile>
+		<Compile Include="..\..\Unity\Codes\Hotfix\Code\System\SeasonComponent\**\*.cs">
+			<Link>Code\System\Gate\SeasonComponent\%(RecursiveDir)%(FileName)%(Extension)</Link>
+		</Compile>
+		<Compile Include="..\..\Unity\Codes\Hotfix\Module\AI\**\*.cs">
+			<Link>Module\AI\%(RecursiveDir)%(FileName)%(Extension)</Link>
+		</Compile>
+		<Compile Include="..\..\Unity\Codes\Hotfix\Module\IOC\**\*.cs">
+			<Link>Module\IOC\%(RecursiveDir)%(FileName)%(Extension)</Link>
+		</Compile>
+		<Compile Include="..\..\Unity\Codes\Hotfix\Module\Message\**\*.cs">
+			<Link>Module\Message\%(RecursiveDir)%(FileName)%(Extension)</Link>
+		</Compile>
+		<Compile Include="..\..\Unity\Codes\Hotfix\Module\Numeric\**\*.cs">
+			<Link>Module\Numeric\%(RecursiveDir)%(FileName)%(Extension)</Link>
+		</Compile>
+		<Compile Include="..\..\Unity\Codes\Hotfix\Module\Tactics\**\*.cs">
+			<Link>Module\Tactics\%(RecursiveDir)%(FileName)%(Extension)</Link>
+		</Compile>
+		<Compile Include="..\..\Unity\Codes\Hotfix\Code\Events\Item\**\*.cs">
+			<Link>Code\Events\Item\%(RecursiveDir)%(FileName)%(Extension)</Link>
+		</Compile>
+		<Compile Include="..\..\Unity\Codes\Hotfix\Code\Extensions\**\*.cs">
+			<Link>Code\Extensions\%(RecursiveDir)%(FileName)%(Extension)</Link>
+		</Compile>
+		<Compile Include="..\..\Unity\Codes\Hotfix\Module\ManagerEx\**\*.cs">
+			<Link>Module\ManagerEx\%(RecursiveDir)%(FileName)%(Extension)</Link>
+		</Compile>
+		<Compile Include="..\..\Unity\Codes\Hotfix\Code\Factory\**\*.cs">
+			<Link>Code\Factory\%(RecursiveDir)%(FileName)%(Extension)</Link>
+		</Compile>
+		<Compile Include="..\..\Unity\Codes\HotfixView\Code\Extensions\ItemEnhance\*.cs">
+			<Link>Code\Extensions\%(RecursiveDir)%(FileName)%(Extension)</Link>
+		</Compile>
+		<Compile Include="..\..\Unity\Codes\HotfixView\Code\Extensions\ItemResourceChecker\*.cs">
+			<Link>Code\Extensions\%(RecursiveDir)%(FileName)%(Extension)</Link>
+		</Compile>
+		<Compile Include="..\..\Unity\Codes\HotfixView\Code\Extensions\HeroTalent\*.cs">
+			<Link>Code\Extensions\%(RecursiveDir)%(FileName)%(Extension)</Link>
+		</Compile>
+		<Compile Include="..\..\Unity\Codes\HotfixView\Code\Extensions\HeroTalentController\*.cs">
+			<Link>Code\Extensions\%(RecursiveDir)%(FileName)%(Extension)</Link>
+		</Compile>
+	</ItemGroup>
+	<ItemGroup>
+	  <Compile Remove="..\..\Unity\Codes\Hotfix\Code\Extensions\Player\BattleArray\**" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\Model\Server.Model.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Compile Update="..\..\Unity\Codes\Hotfix\Code\Factory\SceneFactory.cs" Link="Code\Factory\SceneFactory.cs" />
+	</ItemGroup>
+</Project>

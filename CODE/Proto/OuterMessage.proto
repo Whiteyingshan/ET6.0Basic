@@ -1,0 +1,1490 @@
+syntax = "proto3";
+package ET;
+
+//========================================IMessage========================================
+message Int_Int // IMessage
+{
+    int32 Key = 1;
+    int32 Value = 2;
+}
+message Int_Long // IMessage
+{
+    int32 Key = 1;
+    int64 Value = 2;
+}
+
+message Long_Long // IMessage
+{
+    int64 Key = 1;
+    int64 Value = 2;
+}
+
+message Int_String // IMessage
+{
+    int32 Key = 1;
+    string Value = 2;
+}
+
+message String_LongList // IMessage
+{
+    string Key = 1;
+    repeated int64 Value = 2;
+}
+
+message String_SkillList // IMessage
+{
+    string Key = 1;
+    repeated SkillInfo Value = 2;
+}
+
+message Vector3Info // IMessage
+{
+    float X = 1;
+    float Y = 2;
+    float Z = 3;
+}
+
+message NumericInfo // IMessage
+{
+    repeated Long_Long Numerics = 1;
+}
+
+message ServerInfo // IMessage
+{
+    string ServerName = 1;
+    string ServerAddress = 2;
+}
+
+message AccountZoneInfo // IMessage
+{
+    int64 Id = 1;
+    repeated String_LongList Players = 2;
+}
+
+//玩家数据
+message PlayerInfo // IMessage
+{
+    int64 PlayerId  = 1;
+    BasicDataInfo BasicDataInfo = 2;
+    NumericInfo NumericInfo = 3;
+	ItemManagerInfo ItemManagerInfo = 4;
+    PlayerMailInfo MailComponentInfo = 5;
+    SeasonComponentInfo SeasonComponentInfo = 6;
+    BattleArrayComponentInfo BattleArrayComponentInfo = 7;
+    AchievementComponentInfo AchievementComponentInfo = 8;
+    SquadsControllerComponentInfo SquadsControllerComponentInfo = 9;
+    GongFaComponentInfo GongFaComponentInfo = 10;
+}
+
+message BasicDataInfo // IMessage
+{
+    string Account = 1;
+    string Nickname = 2;
+    int64 UnitId = 3;
+}
+
+message ItemValueInfo // IMessage
+{
+    int32 JB = 1;
+    int32 ZS = 2; 
+    int32 JY = 3;
+}
+
+message ItemEntityInfo // IMessage
+{
+    int64 Id = 1;
+    int64 TableId = 2;
+    int32 Count = 3;
+	HeroInfo HeroInfo = 4;
+    EquipInfo EquipInfo = 5;
+    ConsumableInfo ConsumableInfo = 6;
+}
+
+message HeroInfo // IMessage
+{
+    int64 Id = 1;
+    int64 TableId = 2;
+    int64 OwnerId = 3;
+    int32 Count = 4;
+    int64 HeroTableId = 5;	
+    int32 Grade = 6;
+    int32 PhaseGrade = 7;
+    int32 StarGrade = 8;
+    int32 SumRankPoint = 9;
+    NumericInfo NumericInfo = 10;
+    SkillManagerInfo SkillManagerInfo = 11;
+    EquipSlotsInfo EquipSlotsInfo = 12;
+    //英雄天赋信息
+    HeroTalentInfo HeroTalentInfo = 13;
+    //英雄修炼信息
+    HeroPracticeInfo HeroPracticeInfo = 14;
+}
+
+message EquipInfo // IMessage
+{
+    int64 Id = 1;
+    int64 TableId = 2;
+    int64 Count = 3;
+    int64 UserId = 4;	
+    int32 RankPoint = 5;
+    NumericInfo NumericInfo = 6;
+    repeated EquipAppendPropertyInfo EquipAppendPropertyInfo = 7;
+}
+
+message ConsumableInfo // IMessage
+{
+    int64 Id = 1;
+    int64 TableId = 2;
+    int64 Count = 3;
+}
+
+message EquipAppendPropertyInfo // IMessage
+{
+    int64 Id = 1;
+    bool IsEpic = 2;
+    int32 ValueRankGrade = 3;
+    int32 PropertyId = 4;
+}
+
+message SkillManagerInfo // IMessage
+{
+    int64 Id = 1;
+    repeated String_SkillList SkillDict = 2;
+}
+
+message SkillInfo // IMessage
+{
+    int64 Id = 1;
+    int32 Grade = 2;
+    int64 RealSkillId = 3;
+}
+
+message ItemManagerInfo //IMessage
+{
+    repeated ItemEntityInfo ItemEntityInfos = 1;
+}
+
+message EquipSlotsInfo //IMessage
+{
+    int64 Id = 1;
+    repeated Int_Long EquipIdSlotDict = 2;
+    repeated Int_Int EquipSuitDict = 3;
+}
+
+message AwardInfo //IMessage
+{
+    ItemValueInfo itemValueInfo = 1;
+    repeated ItemEntityInfo ItemEntityInfos = 2;
+}
+
+message PlayerRankInfo // IMessage
+{
+    int64 PlayerId = 1;
+    int32 SeasonId = 2;
+    string PlayerName = 3;
+    int32 WinCount = 4;
+    int32 DeaftCount = 5;
+    int32 RankScore = 6;
+}
+
+message PlayerRankListInfo // IMessage
+{
+    repeated PlayerRankInfo PlayerRankInfo = 1;
+}
+
+message UnitInfo // IMessage
+{
+    int64 UnitId = 1;
+    int32 ConfigId = 2;
+    float X = 3;
+    float Y = 4;
+    float Z = 5;
+    repeated int64 Ks = 6;
+    repeated int64 Vs = 7;
+}
+
+message ChapterAwardInfo //IMessage
+{
+    int32 RpcId = 1;
+    int64 CommonCurrency = 2;
+    repeated ItemEntityInfo itemEntityInfos = 3;
+    repeated HeroInfo HeroInfos = 4;
+}
+
+message AchievementComponentInfo //IMessage
+{
+    int32 RpcId = 1;
+    repeated int64 CompletedIds = 2;
+    repeated Int_Long DailyRecord = 3;
+    repeated long DailyTaskReceiveId = 4;
+}
+
+//邮件对象
+message MailObjectInfo // IMessage
+{
+    int64 MailId = 1;
+    int64 Sender = 2;
+    int64 SendTime = 3;
+    string Title = 4;
+    string Content = 5;
+    repeated int32 RewardsId = 6;
+    repeated int32 RewardsCount = 7;
+    bool Read = 8;
+    bool Received = 9;
+}
+
+message PlayerMailInfo // IMessage
+{
+    repeated MailObjectInfo MailObjectInfos = 1;    
+}
+
+//赛事信息
+message SeasonComponentInfo //IMessage
+{    
+    bool IsOpen = 1;
+    int64 SeasonId = 2;
+    int64 Rank = 3;
+    int32 StarCount = 4;
+    int32 FightCount = 5;
+    int64 RefreshTime = 6;
+    int32 ContinueWinCount = 7;
+    int32 TopRankId = 8;
+    bool IsFight = 9;
+}
+
+message SquadsControllerComponentInfo //IMessage
+{
+    int32 RpcId = 1;
+    repeated int64 SquadsMemberIds = 2;
+    int32 CountMax = 3;
+}
+
+
+message PlayerPositionInfo //IMessage
+{
+   int32 Number_ = 1;
+   int32 HeroId = 2;
+   int32 Grade_ = 3;
+   Vector3Info Position = 4;
+   Vector3Info LowerLeft_ = 5;
+   Vector3Info UpperRight_ = 6;
+}
+
+//球员阵容_Pl
+message BattleArrayInfo //IMessage
+{
+    int32 ArrayId = 1;
+	int32 TacticId = 2;
+    int32 DefTacticId = 3;
+    repeated int64 BattleHeros = 4;
+    repeated int64 ReserveHeros = 5;
+    repeated PlayerPositionInfo PlayerPosition = 6;
+    repeated int32 ArrayFetterAddition = 7;
+}
+
+message BattleArrayComponentInfo // IMessage
+{
+    int32 CurrentArray = 1;
+    repeated BattleArrayInfo BattleArrayInfo = 2;
+}
+
+
+//功法信息
+message GongFaInfo // IMessage
+{
+	int32 RpcId = 90;
+	
+	int64 Id = 1;
+	int64 TableId = 2;	
+	int32 Grade = 3;
+	int64 ParentId = 4;	
+}
+
+//功法组件信息
+message GongFaComponentInfo // IMessage
+{
+	int32 RpcId = 90;
+	
+    int64 Id = 1;	
+	repeated GongFaInfo infos = 2;
+}
+
+//单个节点英雄天赋信息
+message HeroTalentSingleInfo // IMessage
+{
+    int32 RpcId = 90;
+    
+    int32 TalentNum = 1;
+    repeated int64 TalentValueArray = 2;
+}
+
+//单页英雄天赋信息
+message HeroTalentSinglepageInfo // IMessage
+{
+    int32 RpcId = 90;
+    
+    int32 PageNum = 1;
+    repeated HeroTalentSingleInfo HeroTalentSingleInfos = 2;
+}
+
+//英雄天赋信息
+message HeroTalentInfo // IMessage
+{
+    int32 RpcId = 90;
+    
+    repeated HeroTalentSinglepageInfo HeroTalentPageInfos = 1;
+    NumericInfo NumericInfo = 2;
+}
+
+//英雄修炼信息
+message HeroPracticeInfo // IMessage
+{
+    int32 RpcId = 90;
+    
+    int32 CurPliesNum = 1;
+    int32 CurPracticeNum = 2;
+    int32 CurPracticeProgressPct = 3;
+    NumericInfo NumericInfo = 4;
+}
+
+//========================================IRequest========================================
+message Response // IResponse
+{
+    int32 RpcId = 1;
+    int32 Error = 2;
+    string Message = 3;
+}
+
+//ResponseType G2C_Ping
+message C2G_Ping // IRequest
+{
+    int32 RpcId = 1;
+}
+
+message G2C_Ping // IResponse
+{
+    int32 RpcId = 1;
+    int32 Error = 2;
+    string Message = 3;
+    int64 Time = 4;
+}
+
+//ResponseType R2C_Register
+message C2R_Register // IRequest
+{
+    int32 RpcId = 1;
+    string Username = 2;
+    string Password = 3;
+}
+
+message R2C_Register // IResponse
+{
+    int32 RpcId = 1;
+    int32 Error = 2;
+    string Message = 3;
+}
+
+//ResponseType R2C_SetReal
+message C2R_SetReal // IRequest
+{
+    int32 RpcId = 1;
+    string Username = 2;  // 帐号
+    int32 Age = 3;
+}
+
+message R2C_SetReal // IResponse
+{
+    int32 RpcId = 1;
+    int32 Error = 2;
+    string Message = 3;
+}
+
+//ResponseType R2C_Login
+message C2R_Login // IRequest
+{
+    int32 RpcId = 1;
+    string Username = 2;  // 帐号
+    string Password = 3;  // 密码
+}
+
+message R2C_Login // IResponse
+{
+    int32 RpcId = 1;
+    int32 Error = 2;
+    string Message = 3;
+    int32 Age = 4;
+}
+
+//ResponseType R2C_GetServers
+message C2R_GetServers // IRequest
+{
+    int32 RpcId = 1;
+}
+
+message R2C_GetServers // IResponse
+{
+    int32 RpcId = 1;
+    int32 Error = 2;
+    string Message = 3;
+    string Address = 4;
+    repeated ServerInfo Servers = 5;
+}
+
+//ResponseType G2C_LoginGate
+message C2G_LoginGate // IRequest
+{
+    int32 RpcId = 1;
+    string Token = 2;  // 帐号
+}
+
+message G2C_LoginGate // IResponse
+{
+    int32 RpcId = 1;
+    int32 Error = 2;
+    string Message = 3;
+    AccountZoneInfo AccountZoneInfo = 4;
+}
+
+//ResponseType G2C_CreatePlayer
+message C2G_CreatePlayer // IRequest
+{
+    int32 RpcId = 1;
+    string ServerId = 2;
+}
+
+message G2C_CreatePlayer // IResponse
+{
+    int32 RpcId = 1;
+    int32 Error = 2;
+    string Message = 3;
+    AccountZoneInfo AccountZoneInfo = 4;
+}
+
+//ResponseType G2C_LoginPlayer
+message C2G_LoginPlayer // IRequest
+{
+    int32 RpcId = 1;
+    int64 PlayerId = 2;
+}
+
+message G2C_LoginPlayer // IResponse
+{
+    int32 RpcId = 1;
+    int32 Error = 2;
+    string Message = 3;
+    PlayerInfo PlayerInfo = 4;	
+    string NikiName = 5;
+}
+
+//ResponseType G2C_PassLevel
+message C2G_PassLevel // IRequest
+{
+    int32 RpcId = 1;
+    int32 LevelId = 2;
+}
+
+message G2C_PassLevel // IResponse
+{
+    int32 RpcId = 1;	
+    int32 Error = 2;
+    string Message = 3;
+    int32 LevelId = 4;
+    AwardInfo AwardInfo = 5;
+}
+
+//临时视频播放次数信息
+//ResponseType G2C_PlayLevelVideo
+message C2G_PlayLevelVideo // IRequest
+{
+    int32 RpcId = 1;
+    string VideoTimes = 2;
+}
+
+message G2C_PlayLevelVideo // IResponse
+{
+    int32 RpcId = 1;	
+    int32 Error = 2;
+    string Message = 3;
+    string VideoTimes = 4;
+}
+
+//战斗结束发送信息
+//ResponseType G2C_BattleEndInformation
+message C2G_BattleEndInformation // IRequest
+{
+    int32 RpcId = 1;
+    int32 PlayerGoal = 2;
+    bool IsWin = 3;
+}
+
+message G2C_BattleEndInformation // IResponse
+{
+    int32 RpcId = 1;	
+    int32 Error = 2;
+    string Message = 3;
+}
+
+//领取奖励
+//ResponseType G2C_ReceiveRewards
+message C2G_ReceiveRewards // IRequest
+{
+    int32 RpcId = 1;
+    int32 ReceiveType = 2;
+    int32 MailId = 3;
+    long TaskId = 4;
+    long AchieveId = 5;
+}
+
+message G2C_ReceiveRewards // IResponse
+{
+    int32 RpcId = 1;
+    int32 Error = 2;
+    string Message = 3;
+    long TaskId = 4;
+    long AchieveId = 5;
+}
+
+//ResponseType G2C_EnterMap
+message C2G_EnterMap // IRequest
+{
+    int32 RpcId = 1;
+}
+
+message G2C_EnterMap // IResponse
+{
+    int32 RpcId = 1;
+    int32 Error = 2;
+    string Message = 3;
+    // 自己的unit id
+    int64 UnitId = 4;
+    // 所有的unit
+    repeated UnitInfo Units = 5;
+}
+
+//ResponseType M2C_Reload
+message C2M_Reload // IRequest
+{
+    int32 RpcId = 1;
+    string Account = 2;
+    string Password = 3;
+}
+
+message M2C_Reload // IResponse
+{
+    int32 RpcId = 1;
+    int32 Error = 2;
+    string Message = 3;
+}
+
+//ResponseType C2G_GetChapterAward
+message C2G_GetChapterAward // IRequest
+{
+    int32 RpcId = 1;
+    
+    int32 AwardTableId = 2;
+}
+
+message G2C_GetChapterAward // IResponse
+{
+    int32 RpcId = 1;	
+    
+    int32 Error = 2;
+    string Message = 3;
+    ChapterAwardInfo chapterAwardInfo = 4;	
+}
+
+//ResponseType C2G_GetTaskReward
+message C2G_GetTaskReward //IRequest
+{
+    int32 RpcId = 1;
+
+    int32 TaskTableId = 2;
+}
+
+message G2C_GetTaskReward //IResponse
+{
+    int32 RpcId = 1;
+    
+    int32 Error = 2;
+    string Message = 3;
+    ChapterAwardInfo TaskRewardInfo = 4;
+}
+
+//ResponseType C2G_HeroUpGrade
+message C2G_HeroUpGrade //IRequest
+{
+    int32 RpcId = 1;
+
+    long ItemId = 2;
+}
+
+message G2C_HeroUpGrade //IResponse
+{
+    int32 RpcId = 1;
+
+    int32 Error = 2;
+    string Message = 3;
+    int32 Grade = 4;
+    int32 JBCount = 5;
+}
+
+//ResponseType C2G_HeroSell
+message C2G_HeroSell //IRequest
+{
+    int32 RpcId = 1;
+
+    int32 Sell_JBSumCount = 2;
+}
+
+message G2C_HeroSell //IResponse
+{
+    int32 RpcId = 1;
+
+    int32 Error = 2;
+    string Message = 3;
+    int32 JBCount = 4;
+}
+
+//ResponseType C2G_LevelInformation
+message C2G_LevelInformation //IRequest
+{
+    int32 RpcId = 1;
+
+    int32 LevelId = 2;
+}
+
+message G2C_LevelInformation //IResponse
+{
+    int32 RpcId = 1;
+
+    int32 Error = 2;
+    string Message = 3;
+    int32 Count = 4;
+}
+
+//ResponseType C2G_AwardInfo
+message C2G_AwardInfo // IRequest
+{
+    int32 RpcId = 1;
+    
+    int64 PlayerId = 2;
+    int32 tableID = 3;  
+    int32 itemCount = 4;
+}
+
+message G2C_AwardInfo // IResponse
+{
+    int32 RpcId = 1;	
+    
+    int32 Error = 2;
+    string Message = 3;
+}
+
+//ResponseType G2C_CompletedAchievement
+message C2G_CompletedAchievement // IRequest
+{
+    int32 RpcId = 1;
+    
+    int64 AchievementTid = 2;
+}
+
+message G2C_CompletedAchievement // IResponse
+{
+    int32 RpcId = 1;
+    
+    int32 Error = 2;
+    string Message = 3;
+}
+
+//保存阵容
+//ResponseType G2C_SaveBattleArray
+message C2G_SaveBattleArray // IRequest
+{
+    int32 RpcId = 1;    
+    BattleArrayComponentInfo BattleArrayComponentInfo = 2;
+}
+
+message G2C_SaveBattleArray // IResponse
+{
+    int32 RpcId = 1;
+    int32 Error = 2;
+    string Message = 3;
+}
+
+//ResponseType G2C_SaveBattleArrayCurrentIndex
+message C2G_SaveBattleArrayCurrentIndex // IRequest
+{
+    int32 RpcId = 1; 
+    int32 SaveBattleArrayCurrentIndex = 2;
+}
+
+message G2C_SaveBattleArrayCurrentIndex // IResponse
+{
+    int32 RpcId = 1;
+    int32 Error = 2;
+    string Message = 3;
+}
+
+//读邮件
+message C2G_ReadMail // IMessage
+{
+    int64 MailId = 1;
+}
+
+//删除邮件
+message C2G_DeleteMail // IMessage
+{
+    int64 MailId = 1;
+}
+
+//一键删除邮件
+//ResponseType G2C_AutoDeleteMail
+message C2G_AutoDeleteMail // IRequest
+{
+    int32 RpcId = 1;
+} 
+
+message G2C_AutoDeleteMail // IResponse
+{
+    int32 RpcId = 1;
+    int32 Error = 2;
+    string Message = 3;
+    PlayerMailInfo MailInfos = 4;
+}
+
+//获取邮件附件
+//ResponseType G2C_GetMailEnclosure
+message C2G_GetMailEnclosure // IRequest
+{
+    int32 RpcId = 1;
+    int64 MailId = 2;
+}
+
+message G2C_GetMailEnclosure // IResponse
+{
+    int32 RpcId = 1;
+    int32 Error = 2;
+    string Message = 3;
+    AwardInfo awardInfo = 4;
+} 
+
+//一键领取
+//ResponseType G2C_AutoGetMailEnclosure
+message C2G_AutoGetMailEnclosure // IRequest
+{
+    int32 RpcId = 1;
+}
+
+message G2C_AutoGetMailEnclosure // IResponse
+{
+    int32 RpcId = 1;
+    int32 Error = 2;
+    string Message = 3;
+    AwardInfo awardInfo = 4;
+    PlayerMailInfo PlayerMailInfo = 5;
+}
+
+//开始排位
+//ResponseType G2C_StartSeasonRank
+message C2G_StartSeasonRank // IRequest
+{
+    int32 RpcId = 1;
+    int64 PlayerId = 2;
+} 
+
+message G2C_StartSeasonRank // IResponse
+{
+    int32 RpcId = 1;
+    int32 Error = 2;
+    string Message = 3;
+}
+
+//取消排位
+//ResponseType G2C_CancelSeasonRank
+message C2G_CancelSeasonRank // IRequest
+{
+    int32 RpcId = 1;
+
+    int64 PlayerId = 2;
+} 
+
+message G2C_CancelSeasonRank // IResponse
+{
+    int32 RpcId = 1;
+    int32 Error = 2;
+    string Message = 3;
+}
+
+//ResponseType G2C_MatchRankPlayer
+message C2G_MatchRankPlayer // IRequest
+{
+    int32 RpcId = 1;
+    int64 PlayerId = 2;
+}
+
+message G2C_MatchRankPlayer // IResponse
+{
+    int32 RpcId = 1;
+    int32 Error = 2;
+    string Message = 3;
+    repeated int64 PlayerId = 4;
+    repeated string PlayerName = 6;
+    repeated int64 PlayerRankPoint = 7;
+}
+
+//ResponseType G2C_SendRankResult
+message C2G_SendRankResult // IRequest
+{
+    int32 RpcId = 1;
+    bool Win = 2;
+}
+
+message G2C_SendRankResult // IResponse
+{
+    int32 RpcId = 1;
+    int32 Error = 2;
+    string Message = 3;
+    int32 PlayerSocre = 4;
+}
+
+//ResponseType G2C_GetPlayerRank
+message C2G_GetPlayerRank // IRequest
+{
+    int32 RpcId = 1;
+}
+
+message G2C_GetPlayerRank // IResponse
+{
+    int32 RpcId = 1;
+    int32 Error = 2;
+    string Message = 3;
+    int32 Rank = 4;
+    PlayerRankInfo playerRankInfo = 5;
+}
+
+//ResponseType G2C_GetPlayerRankList
+message C2G_GetPlayerRankList // IRequest
+{
+    int32 RpcId = 1;
+}
+
+message G2C_GetPlayerRankList // IResponse
+{
+    int32 RpcId = 1;
+    int32 Error = 2;
+    string Message = 3;
+    int32 Rank = 4;
+    PlayerRankListInfo playerRankListInfo = 5;
+}
+
+//ResponseType G2C_GetPlayerSeasonRankList
+message C2G_GetPlayerSeasonRankList // IRequest
+{
+    int32 RpcId = 1;
+    int32 PlayerId = 2;
+}
+
+message G2C_GetPlayerSeasonRankList // IResponse
+{
+    int32 RpcId = 1;
+    int32 Error = 2;
+    string Message = 3;
+    PlayerRankListInfo Seasons = 4;
+}
+
+
+
+//ResponseType G2C_Setting
+message C2G_Setting // IRequest
+{
+    int32 RpcId = 1;
+    
+    string NikiName = 2;
+    int32 EmblemID = 3;
+}
+
+message G2C_Setting // IResponse
+{
+    int32 RpcId = 1;
+    
+    int32 Error = 2;
+    string Message = 3;
+}
+
+
+//更改玩家姓名
+//ResponseType G2C_OnSetName
+message C2G_OnSetName // IRequest
+{
+    int32 RpcId = 1;
+    
+    string NikiName = 2;
+}
+
+message G2C_OnSetName // IResponse
+{
+    int32 RpcId = 1;
+    
+    int32 Error = 2;
+    string Message = 3;
+}
+
+
+//阵容切换
+//ResponseType G2C_FormationInfoChange
+message C2G_FormationInfoChange // IRequest
+{
+    int32 RpcId = 90;
+    
+    int64 RoleId = 1;
+    int32 Index = 2;
+    int64 HeroId = 3;
+}
+
+message G2C_FormationInfoChange // IResponse
+{
+    int32 RpcId = 90;
+    int32 Error = 91;
+    string Message = 92;
+    
+    SquadsControllerComponentInfo squadsInfo = 1;
+}
+
+
+//自动布阵
+//ResponseType G2C_AutoEmbattle
+message C2G_AutoEmbattle // IRequest
+{
+    int32 RpcId = 90;
+    
+    int64 RoleId = 1; 
+}
+
+message G2C_AutoEmbattle // IResponse
+{
+    int32 RpcId = 90;
+    int32 Error = 91;
+    string Message = 92;
+    
+    int64 RoleId = 1; 
+	SquadsControllerComponentInfo squadsInfo = 2;
+	repeated int32 indexs = 3;
+}
+
+//穿戴装备
+//ResponseType G2C_PutonEquip
+message C2G_PutonEquip // IRequest
+{
+    int32 RpcId = 90;
+    
+    int64 RoleId = 1;
+    int64 EquipId = 2;
+    int64 HeroId = 3;
+}
+
+message G2C_PutonEquip // IResponse
+{
+    int32 RpcId = 90;
+    int32 Error = 91;
+    string Message = 92;
+}
+
+//卸载装备
+//ResponseType G2C_UnfixEquip
+message C2G_UnfixEquip // IRequest
+{
+    int32 RpcId = 90;
+    
+    int64 RoleId = 1;
+    int64 EquipId = 2;
+    int64 HeroId = 3;
+}
+
+message G2C_UnfixEquip // IResponse
+{
+    int32 RpcId = 90;
+    int32 Error = 91;
+    string Message = 92;
+}
+
+//充值请求
+//ResponseType G2C_Purchase
+message C2G_Purchase // IRequest
+{
+    int32 RpcId = 90;
+    
+    int64 PurchaseID = 1;
+    int64 RoleId = 2;
+}
+
+message G2C_Purchase // IResponse
+{
+    int32 RpcId = 90;
+    int32 Error = 91;
+    string Message = 92;
+    
+    int64 PayCurrencyNum = 93;
+	int64 BuyPrice = 94;
+}
+
+//充值奖励获取
+//ResponseType G2C_GetPurchaseAward
+message C2G_GetPurchaseAward // IRequest
+{
+	int32 RpcId = 90;
+	
+	int64 RoleId = 1;
+	int64 AwardId = 2;
+}
+
+message G2C_GetPurchaseAward // IResponse
+{
+	int32 RpcId = 90;
+    int32 Error = 91;
+	string Message = 92;
+	
+	AwardInfo awardInfo = 1;
+}
+
+
+//冶炼请求
+//ResponseType G2C_Recoin
+message C2G_Recoin  // IRequest
+{
+	int32 RpcId = 90;
+	
+	int64 RoleId = 1;	
+	int64 EquipAId = 2;
+	int64 EquipBId = 3;
+}
+
+message G2C_Recoin  // IResponse
+{
+	int32 RpcId = 90;
+    int32 Error = 91;
+	string Message = 92;	
+		
+	EquipAppendPropertyInfo EquipAppendProperties = 10001;
+}
+
+//英雄升级强化
+//ResponseType G2C_HeroGradeIntensify
+message C2G_HeroGradeIntensify // IRequest
+{
+    int32 RpcId = 90;
+    
+    int64 RoleId = 1;
+    int64 HeroId = 2;
+    int32 HeroGrade = 3;
+	int32 ReduceType = 4;
+}
+
+message G2C_HeroGradeIntensify // IResponse
+{
+    int32 RpcId = 90;
+    int32 Error = 91;
+    string Message = 92;
+}
+
+//英雄升阶
+//ResponseType G2C_HeroPhaseGradeIntensify
+message C2G_HeroPhaseGradeIntensify // IRequest
+{
+	int32 RpcId = 90;
+	
+	int64 RoleId = 1;
+	int64 HeroId = 2;
+	int32 HeroPhaseGrade = 3; 
+}
+
+message G2C_HeroPhaseGradeIntensify // IResponse
+{
+	int32 RpcId = 90;
+    int32 Error = 91;
+	string Message = 92;
+}
+
+//选择功法请求
+//ResponseType G2C_AffirmGongFa
+message C2G_AffirmGongFa  // IRequest
+{
+	int32 RpcId = 90;
+	
+	int64 RoleId = 1;		
+	int64 TableId = 2;
+	int64 ParentId = 3;
+}
+
+message G2C_AffirmGongFa  // IResponse
+{
+	int32 RpcId = 90;
+    int32 Error = 91;
+	string Message = 92;	
+		
+	GongFaInfo info = 1;
+}
+
+//升级功法请求
+//ResponseType G2C_GongFaUp
+message C2G_GongFaUp  // IRequest
+{
+	int32 RpcId = 90;
+	
+	int64 RoleId = 1;		
+	int64 id = 2;
+}
+
+message G2C_GongFaUp   // IResponse
+{
+	int32 RpcId = 90;
+    int32 Error = 91;
+	string Message = 92;	
+		
+	GongFaInfo info = 1;
+}
+//英雄天赋强化
+//ResponseType G2C_HeroTalentIntensify
+message C2G_HeroTalentIntensify // IRequest
+{
+    int32 RpcId = 90;
+    
+    int64 RoleId = 1;
+    int64 HeroId = 2;
+    int32 PliesNum = 3;
+    int32 TalentNum = 4;
+}
+
+message G2C_HeroTalentIntensify // IResponse
+{
+    int32 RpcId = 90;
+    int32 Error = 91;
+    string Message = 92;
+    
+    repeated int64 TalentValueArray = 1;
+}
+
+//英雄修炼强化
+//ResponseType G2C_HeroPracticeIntensify
+message C2G_HeroPracticeIntensify // IRequest
+{
+    int32 RpcId = 90;
+    
+    int64 RoleId = 1;
+    int64 HeroId = 2;
+}
+
+message G2C_HeroPracticeIntensify // IResponse
+{
+    int32 RpcId = 90;
+    int32 Error = 91;
+    string Message = 92;
+    
+    int32 PracticeProgressPct = 1;
+}
+
+//关卡挑战胜利
+//ResponseType G2C_GameLevelCombatVictory
+message C2G_GameLevelCombatVictory // IRequest
+{
+    int32 RpcId = 90;
+    
+    int64 RoleId = 1;
+    int64 CurGameLevel = 2;
+	int64 Time = 3;
+    bool isNextTask = 4;
+}
+
+message G2C_GameLevelCombatVictory // IResponse
+{
+    int32 RpcId = 90;
+    int32 Error = 91;
+    string Message = 92;
+    
+    int64 CurGameLevel = 1;
+    AwardInfo awardInfo = 2; 
+}
+
+//购买商品
+//ResponseType G2C_BuyShop
+message C2G_BuyShop // IRequest
+{
+    int32 RpcId = 90;
+    
+    int64 RoleId = 1;
+    int64 GoodId = 2;
+    int32 GoodCount = 3;
+}
+
+message G2C_BuyShop // IResponse
+{
+    int32 RpcId = 90;
+    int32 Error = 91;
+    string Message = 92;
+
+    AwardInfo awardInfo = 2; 
+}
+
+//刷新竞技场列表
+//ResponseType G2C_RefreshRankList
+message C2G_RefreshRankList // IRequest
+{
+    int32 RpcId = 90;
+    
+    int64 RoleId = 1;
+}
+
+message G2C_RefreshRankList // IResponse
+{
+    int32 RpcId = 90;
+    int32 Error = 91;
+    string Message = 92;
+}
+
+//竞技场挑战
+//ResponseType G2C_RankListChallenge
+message C2G_RankListChallenge // IRequest
+{
+    int32 RpcId = 90;
+    
+    int64 RoleId = 1;
+    int64 ChallengeId = 2;
+}
+
+message G2C_RankListChallenge // IResponse
+{
+    int32 RpcId = 90;
+    int32 Error = 91;
+    string Message = 92;
+
+    repeated long Heros = 1;
+}
+
+//副本挑战胜利
+//ResponseType G2C_ChallengeVictory
+message C2G_ChallengeVictory // IRequest
+{
+    int32 RpcId = 90;
+    
+    int64 RoleId = 1;
+    int64 CurChallengeLevel = 2;
+}
+
+message G2C_ChallengeVictory // IResponse
+{
+    int32 RpcId = 90;
+    int32 Error = 91;
+    string Message = 92;
+    
+    int64 CurChallengeLevel = 1;
+    AwardInfo awardInfo = 2; 
+}
+
+//新手任务完成
+//ResponseType G2C_NewPlayerTaskFinish
+message C2G_NewPlayerTaskFinish // IRequest
+{
+    int32 RpcId = 90;
+    
+    int64 RoleId = 1;
+    int64 NewPlayerTaskId = 2;
+    bool isNextTask = 3;
+}
+
+message G2C_NewPlayerTaskFinish // IResponse
+{
+    int32 RpcId = 90;
+    int32 Error = 91;
+    string Message = 92;
+}
+
+//通过ID查询玩家，返回玩家姓名与战力
+//ResponseType G2C_QueryIdPlayer
+message C2G_QueryIdPlayer // IRequest
+{
+    int32 RpcId = 90;
+    
+    int64 RoleId = 1;
+}
+
+message G2C_QueryIdPlayer // IResponse
+{
+    int32 RpcId = 90;
+    int32 Error = 91;
+    string Message = 92;
+
+    string PlayerName = 1;
+    int64 PlayerRankPoint = 2;
+}
+//========================================IActorMessage========================================
+message M2C_CreateUnits // IActorMessage
+{
+    int32 RpcId = 1;
+    int64 ActorId = 2;
+    repeated UnitInfo Units = 3;
+}
+
+message M2C_PathfindingResult // IActorMessage
+{
+    int64 ActorId = 1;
+
+    int64 Id = 2;
+
+    float X = 3;
+    float Y = 4;
+    float Z = 5;
+
+    repeated float Xs = 6;
+    repeated float Ys = 7;
+    repeated float Zs = 8;
+}
+
+message M2C_Stop // IActorMessage
+{
+    int32 Error = 1;
+
+    int64 Id = 2;
+    float X = 3;
+    float Y = 4;
+    float Z = 5;
+
+    float A = 6;
+    float B = 7;
+    float C = 8;
+    float W = 9;
+}
+
+message G2C_SendMail // IActorMessage
+{
+    int32 RpcId = 1;
+    int64 ActorId = 2;
+
+    MailObjectInfo MailInfo = 3;
+}
+
+//体力回复
+message G2C_FatigueReply // IActorMessage
+{
+	int32 RpcId = 1;
+    int64 ActorId = 2;
+
+	int32 FatigueValue = 3;
+}
+
+message G2C_DeleteMail // IActorMessage
+{
+    int32 RpcId = 1;
+    int64 ActorId = 2;
+
+    int32 Index = 3;
+}
+
+//通知赛程的开启与关闭
+message G2C_SeasonPass // IActorMessage
+{
+    int32 RpcId = 1;
+
+    bool IsActive = 2; 
+    int64 SeasonId = 3; 
+    SeasonComponentInfo SeasonComponentInfo = 4;
+}
+
+//重置排位次数
+message G2C_ResetRankCount // IActorMessage
+{
+    int32 RpcId = 1;
+    
+    int64 Time = 2;
+    int32 Count = 3;
+}
+
+//进入排位战斗
+message G2C_RankCombatStart // IActorMessage
+{
+    int32 RpcId = 1;
+        
+}
+
+//排位结果
+message G2C_SeasonRankResult // IActorMessage
+{
+    int32 RpcId = 1;
+    
+    bool Result = 2;
+    AwardInfo AwardInfo = 3;
+    SeasonComponentInfo Info = 4;
+}
+
+//出战小队数据
+message SquadsInfo // IMessage
+{
+    int32 RpcId = 90;
+    
+    int32 CountMax = 1001;	//最大数量
+    
+    repeated int64 memberIds = 10001;	//出战成员Id
+}
+
+//========================================IActorLocationMessage========================================
+message C2M_PathfindingResult // IActorLocationMessage
+{
+    int32 RpcId = 1;
+    int64 ActorId = 2;
+
+    float X = 3;
+    float Y = 4;
+    float Z = 5;
+}
+
+message C2M_Stop // IActorLocationMessage
+{
+    int32 RpcId = 1;
+    int64 ActorId = 2;
+}
+
+//========================================IActorLocationRequest========================================
+//ResponseType M2C_TestResponse
+message C2M_TestRequest // IActorLocationRequest
+{
+    int32 RpcId = 1;
+    int64 ActorId = 2;
+    string request = 3;
+}
+
+message M2C_TestResponse // IActorLocationResponse
+{
+    int32 RpcId = 1;
+    int32 Error = 2;
+    string Message = 3;
+    string response = 4;
+}
+
+//ResponseType Actor_TransferResponse
+message Actor_TransferRequest // IActorLocationRequest
+{
+    int32 RpcId = 1;
+    int64 ActorId = 2;
+    int32 MapIndex = 3;
+}
+
+message Actor_TransferResponse // IActorLocationResponse
+{
+    int32 RpcId = 1;
+    int32 Error = 2;
+    string Message = 3;
+}
+
+//ResponseType M2C_TestRobotCase
+message C2M_TestRobotCase // IActorLocationRequest
+{
+    int32 RpcId = 1;
+    int64 ActorId = 2;
+    int32 N = 3;
+}
+
+message M2C_TestRobotCase // IActorLocationResponse
+{
+    int32 RpcId = 1;
+    int32 Error = 2;
+    string Message = 3;
+    int32 N = 4;
+}

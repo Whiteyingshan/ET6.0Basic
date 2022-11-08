@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b3adc1b00a2bdf4ca2754cb04c1470f, type: 3}
+  m_Name: DefaultSettings
+  m_EditorClassIdentifier: 
+  version: 0
+  manifests:
+  - {fileID: 11400000, guid: fbd096f31efb315478f07c8185a47d18, type: 2}
+  - {fileID: 11400000, guid: c6a13851bcc0ef34f9e72957a880be0f, type: 2}
+  - {fileID: 11400000, guid: 1e4e167cf852cc54990aff49e60c04ad, type: 2}
+  - {fileID: 11400000, guid: 8df6f2ce0d9828f4494187fce3b3ac00, type: 2}
+  - {fileID: 11400000, guid: 5ad3c5ebca0f03d4ea633171e92548f0, type: 2}
+  buildAssetBundleOptions: 0
+  scriptPlayMode: 0
+  startupScene: {fileID: 102900000, guid: e0d691ac8c1d0454ba07089ea820e18a, type: 3}

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="720,1280" overflow="hidden">
+  <controller name="Panel" pages="0,,1,,2," selected="1">
+    <remark page="0" value="检查更新"/>
+    <remark page="1" value="下载更新"/>
+    <remark page="2" value="下载完成"/>
+  </controller>
+  <displayList>
+    <graph id="n121_fuxg" name="BG" xy="0,0" size="720,1280" type="rect" fillColor="#ff333333">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <text id="n89_i96m" name="Res_Text_Download_CheckFileTip" xy="184,1200" size="325,42" group="n90_i96m" font="Microsoft YaHei" fontSize="30" color="#ffffff" align="center" vAlign="middle" strokeColor="#26160f" text="正在检查更新，请稍后...">
+      <relation target="" sidePair="center-center,bottom-bottom"/>
+    </text>
+    <group id="n90_i96m" name="Res_Group_CheckFile" xy="184,1200" size="325,42" advanced="true">
+      <gearDisplay controller="Panel" pages="0"/>
+    </group>
+    <text id="n91_i96m" name="Res_Text_Download_DownloadFileTip" xy="210,1118" size="325,42" group="n93_i96m" font="Microsoft YaHei" fontSize="30" color="#ffffff" align="center" vAlign="middle" leading="0" strokeColor="#26160f" text="正在下载资源，请稍后...">
+      <relation target="" sidePair="center-center,bottom-bottom"/>
+    </text>
+    <text id="n118_imfg" name="Text_Downloaded" xy="202,1175" size="167,42" group="n93_i96m" font="Microsoft YaHei" fontSize="30" color="#ffffff" align="right" vAlign="middle" text="1000.00MB">
+      <relation target="n119_imfg" sidePair="middle-middle,right-left"/>
+    </text>
+    <text id="n119_imfg" name="n202" xy="368,1175" size="17,42" group="n93_i96m" font="Microsoft YaHei" fontSize="30" color="#ffffff" align="right" vAlign="middle" text="/">
+      <relation target="n92_i96m" sidePair="center-center,middle-middle"/>
+    </text>
+    <text id="n120_imfg" name="Text_TotalSize" xy="385,1175" size="167,42" group="n93_i96m" font="Microsoft YaHei" fontSize="30" color="#ffffff" align="right" vAlign="middle" text="1000.00MB">
+      <relation target="n119_imfg" sidePair="middle-middle,left-right"/>
+    </text>
+    <component id="n92_i96m" name="ProgressBar_LodingBar" src="gvc95" fileName="组件/DownloadProgress.xml" xy="27,1234" group="n93_i96m">
+      <relation target="" sidePair="center-center,bottom-bottom"/>
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <group id="n93_i96m" name="Res_Group_DownloadFile" xy="27,1118" size="665,126" advanced="true">
+      <gearDisplay controller="Panel" pages="1"/>
+    </group>
+    <text id="n94_i96m" name="Res_Text_Download_DownloadFinishTip" xy="95,1211" size="526,39" group="n95_i96m" font="Microsoft YaHei" fontSize="28" color="#ffffff" align="center" vAlign="middle" vars="true" strokeColor="#26160f" text="正在{var=加载}文件,请稍候(不消耗流量请放心)...">
+      <relation target="" sidePair="center-center,bottom-bottom"/>
+    </text>
+    <text id="n105_hgdg" name="Text_LoadingTips" xy="80,1157" size="557,39" group="n95_i96m" font="Microsoft YaHei" fontSize="28" color="#ffffff" align="center" vAlign="middle" vars="true" strokeColor="#26160f" text="加载与解析会稍有卡顿属正常现象请勿中断...">
+      <relation target="" sidePair="center-center,bottom-bottom"/>
+    </text>
+    <group id="n95_i96m" name="Res_Group_DownloadFinish" xy="80,1157" size="557,93" advanced="true">
+      <gearDisplay controller="Panel" pages="2"/>
+    </group>
+  </displayList>
+</component>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="fkxb3vu5">
+  <resources>
+    <image id="s1qb5" name="LoginBtn_Text.png" path="/资源/"/>
+    <image id="s1qb6" name="LoginBtn_Bg.png" path="/资源/"/>
+    <image id="hg9l3b" name="BG_3.png" path="/资源/" scale="9grid" scale9grid="40,1,19,60" gridTile="16"/>
+    <component id="hg9l3d" name="NormalButton.xml" path="/组件/"/>
+    <component id="hg9l3j" name="BgButton.xml" path="/组件/"/>
+    <component id="d0e13m" name="LoginAndRegisterComponent.xml" path="/组件/LoginAndRegister/"/>
+    <component id="s1qb7" name="LoginForm.xml" path="/" exported="true"/>
+    <component id="qf5d5q" name="SingleBtn.xml" path="/组件/"/>
+    <component id="sbpg6c" name="LoginBtn.xml" path="/组件/"/>
+  </resources>
+  <publish name=""/>
+</packageDescription>

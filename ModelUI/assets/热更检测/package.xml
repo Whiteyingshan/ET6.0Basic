@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="cwjgmjz0">
+  <resources>
+    <image id="gvc93" name="ds_0006_jdt.png" path="/资源/"/>
+    <image id="gvc94" name="ds_0007_jdt.png" path="/资源/"/>
+    <component id="gvc95" name="DownloadProgress.xml" path="/组件/"/>
+    <component id="i96m8" name="SplashUI.xml" path="/" exported="true"/>
+    <image id="i96mt" name="LoginBtn_Bg.png" path="/资源/"/>
+  </resources>
+  <publish name="" genCode="true"/>
+</packageDescription>

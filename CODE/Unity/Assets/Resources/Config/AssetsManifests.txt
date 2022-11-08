@@ -1,0 +1,1 @@
+[{"_t":"ManifestInfo","name":"Audio","autoUpdate":true},{"_t":"ManifestInfo","name":"Code","autoUpdate":true},{"_t":"ManifestInfo","name":"Config","autoUpdate":true},{"_t":"ManifestInfo","name":"FUI","autoUpdate":true},{"_t":"ManifestInfo","name":"Videos","autoUpdate":true}]

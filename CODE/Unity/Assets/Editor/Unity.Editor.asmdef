@@ -1,0 +1,22 @@
+{
+    "name": "Unity.Editor",
+    "rootNamespace": "",
+    "references": [
+        "Unity.Mono",
+        "Unity.ThirdParty",
+        "Unity.FairyGUI.Runtime",
+        "ILRuntime",
+        "VEngine"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

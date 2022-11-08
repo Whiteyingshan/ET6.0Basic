@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="720,1280">
+  <displayList>
+    <graph id="n0_sbpg" name="BG" xy="0,0" size="720,1280" type="rect"/>
+    <text id="n1_sbpg" name="UserName" xy="87,77" size="214,42" fontSize="30" vars="true" text="你好，{name=啊吧啊吧}"/>
+  </displayList>
+</component>

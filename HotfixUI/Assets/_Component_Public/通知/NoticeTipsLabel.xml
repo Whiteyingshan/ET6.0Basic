@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="291,40" restrictSize="200,0,0,0" pivot="0.5,0.5" anchor="true" extention="Label">
+  <displayList>
+    <image id="n2_ang3" name="bg" src="ang3dg" fileName="通知/资源/IMG_HeroNameTitleBG.png" xy="-15,0" size="330,40" alpha="0.5">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n0_ptjx" name="title" xy="109,5" size="70,32" font="FZLanTingYuan-M-GBK" fontSize="22" color="#ffffff" align="center" vAlign="middle" ubb="true" strokeColor="#000000" singleLine="true" autoClearText="true" text="爱爱爱">
+      <relation target="" sidePair="middle-middle,center-center"/>
+    </text>
+  </displayList>
+  <relation target="n0_ptjx" sidePair="width-width%"/>
+  <transition name="Animation_Show">
+    <item time="0" type="Alpha" tween="true" startValue="0" endValue="1" duration="6"/>
+    <item time="0" type="Visible" value="true"/>
+    <item time="0" type="XY" tween="true" startValue="0,0" endValue="0,-200" duration="6"/>
+    <item time="48" type="Alpha" tween="true" startValue="1" endValue="0" duration="6"/>
+    <item time="54" type="Visible" value="false"/>
+    <item time="54" type="XY" value="0,0"/>
+  </transition>
+</component>

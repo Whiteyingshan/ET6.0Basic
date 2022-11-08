@@ -1,0 +1,12 @@
+D:\Test\ET6.0Basic\CODE\Bin\net6.0\win-x64\UnityEngine.deps.json
+D:\Test\ET6.0Basic\CODE\Bin\net6.0\win-x64\UnityEngine.dll
+D:\Test\ET6.0Basic\CODE\Bin\net6.0\win-x64\UnityEngine.pdb
+D:\Test\ET6.0Basic\CODE\ThirdParty\UnityEngine\obj\Release\net6.0\win-x64\UnityEngine.csproj.AssemblyReference.cache
+D:\Test\ET6.0Basic\CODE\ThirdParty\UnityEngine\obj\Release\net6.0\win-x64\UnityEngine.GeneratedMSBuildEditorConfig.editorconfig
+D:\Test\ET6.0Basic\CODE\ThirdParty\UnityEngine\obj\Release\net6.0\win-x64\UnityEngine.AssemblyInfoInputs.cache
+D:\Test\ET6.0Basic\CODE\ThirdParty\UnityEngine\obj\Release\net6.0\win-x64\UnityEngine.AssemblyInfo.cs
+D:\Test\ET6.0Basic\CODE\ThirdParty\UnityEngine\obj\Release\net6.0\win-x64\UnityEngine.csproj.CoreCompileInputs.cache
+D:\Test\ET6.0Basic\CODE\ThirdParty\UnityEngine\obj\Release\net6.0\win-x64\UnityEngine.dll
+D:\Test\ET6.0Basic\CODE\ThirdParty\UnityEngine\obj\Release\net6.0\win-x64\refint\UnityEngine.dll
+D:\Test\ET6.0Basic\CODE\ThirdParty\UnityEngine\obj\Release\net6.0\win-x64\UnityEngine.pdb
+D:\Test\ET6.0Basic\CODE\ThirdParty\UnityEngine\obj\Release\net6.0\win-x64\ref\UnityEngine.dll

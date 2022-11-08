@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="110,110" extention="Label">
+  <displayList>
+    <image id="n6_ang3" name="n6" src="ang3df" fileName="通知/Res/iconblankBG.png" xy="0,0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <loader id="n1_l0mg" name="icon" xy="0,0" size="110,110" align="center" vAlign="middle" fill="scaleFree">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <loader id="n4_l0mg" name="Loder_IconBorder" xy="0,0" size="110,110" url="ui://6ehow0cpl0mg20" align="center" vAlign="middle" fill="scaleFree">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <loader id="n3_l0mg" name="Loader_PhaseGrade" xy="10,85" size="90,25" align="center" vAlign="middle" fill="scaleFree">
+      <relation target="" sidePair="width-width,height-height,center-center,bottom-bottom"/>
+    </loader>
+    <text id="n2_l0mg" name="title" xy="60,0" size="50,34" fontSize="40" color="#ffffff" align="right" vAlign="bottom" autoSize="shrink" strokeColor="#000000" shadowColor="#000000" shadowOffset="1,1" singleLine="true" autoClearText="true" text="165">
+      <relation target="" sidePair="right-right,top-top,width-width%,height-height%"/>
+    </text>
+  </displayList>
+</component>
